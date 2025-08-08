@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -20,8 +20,6 @@ const HeroSection = () => {
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Game Developer from Melbourne, Australia
-            <br />
-            Creating immersive experiences and pushing creative boundaries
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -33,17 +31,6 @@ const HeroSection = () => {
             </Button>
           </div>
           
-          <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:shadow-glow-primary">
-              <Github size={24} />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:shadow-glow-primary">
-              <Linkedin size={24} />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:shadow-glow-primary">
-              <Mail size={24} />
-            </Button>
-          </div>
         </div>
         
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

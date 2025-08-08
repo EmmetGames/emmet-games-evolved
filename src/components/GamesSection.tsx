@@ -6,52 +6,28 @@ import { ExternalLink, Play } from "lucide-react";
 const GamesSection = () => {
   const games = [
     {
-      title: "Spades Pro",
-      category: "Card Game",
-      description: "Professional Spades card game with advanced AI and multiplayer features.",
-      tags: ["Unity", "C#", "Multiplayer", "AI"],
+      title: "Game 1",
+      category: "TBD",
+      description: "Game description to be updated.",
+      tags: ["Unity", "C#"],
       status: "Released",
       color: "from-blue-500/20 to-purple-500/20"
     },
     {
-      title: "Heads Up!",
-      category: "Party Game",
-      description: "Fast-paced party game bringing people together through fun challenges.",
-      tags: ["Mobile", "Social", "Unity"],
+      title: "Game 2", 
+      category: "TBD",
+      description: "Game description to be updated.",
+      tags: ["Mobile", "Unity"],
       status: "Released",
       color: "from-green-500/20 to-blue-500/20"
     },
     {
-      title: "Domino Go",
-      category: "Strategy",
-      description: "Modern take on the classic domino game with stunning visuals.",
-      tags: ["Strategy", "Mobile", "Multiplayer"],
+      title: "Game 3",
+      category: "TBD", 
+      description: "Game description to be updated.",
+      tags: ["Strategy", "Mobile"],
       status: "Released",
       color: "from-orange-500/20 to-red-500/20"
-    },
-    {
-      title: "Bumpy Jumpy",
-      category: "Arcade",
-      description: "Challenging platformer with physics-based jumping mechanics.",
-      tags: ["Platformer", "Physics", "Indie"],
-      status: "Released",
-      color: "from-yellow-500/20 to-orange-500/20"
-    },
-    {
-      title: "Meme Masters",
-      category: "Social",
-      description: "Create and share memes in this creative social gaming experience.",
-      tags: ["Social", "Creative", "Community"],
-      status: "Released",
-      color: "from-pink-500/20 to-purple-500/20"
-    },
-    {
-      title: "Project Hex",
-      category: "Strategy",
-      description: "Upcoming hex-based strategy game with deep tactical gameplay.",
-      tags: ["Strategy", "Hex Grid", "Tactical"],
-      status: "In Development",
-      color: "from-teal-500/20 to-blue-500/20"
     }
   ];
 

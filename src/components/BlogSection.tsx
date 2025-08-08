@@ -7,32 +7,32 @@ const BlogSection = () => {
   const posts = [
     {
       title: "My Top 10 Video Games for 2024",
-      excerpt: "A curated list of the most impactful games that shaped my development perspective this year.",
-      date: "Dec 15, 2024",
-      readTime: "8 min read",
-      category: "Game Reviews",
+      excerpt: "",
+      date: "",
+      readTime: "",
+      category: "",
       featured: true
     },
     {
-      title: "Cabinet Complete",
-      excerpt: "Building my custom arcade cabinet from scratch - lessons learned and tips for fellow developers.",
-      date: "Nov 28, 2024",
-      readTime: "12 min read",
-      category: "Hardware"
+      title: "Cabinet Complete", 
+      excerpt: "",
+      date: "",
+      readTime: "",
+      category: ""
     },
     {
       title: "To Plan A Mockingbird",
-      excerpt: "Deep dive into narrative design and how classic literature influences modern game storytelling.",
-      date: "Nov 10, 2024",
-      readTime: "15 min read",
-      category: "Game Design"
+      excerpt: "",
+      date: "",
+      readTime: "",
+      category: ""
     },
     {
       title: "The Quest To Connect Consoles",
-      excerpt: "Exploring cross-platform development challenges and solutions in modern game development.",
-      date: "Oct 22, 2024",
-      readTime: "10 min read",
-      category: "Technical"
+      excerpt: "",
+      date: "",
+      readTime: "",
+      category: ""
     }
   ];
 

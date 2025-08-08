@@ -37,9 +37,8 @@ const AboutSection = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Game Developer & Team Lead</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Based in Melbourne, Australia, I'm a passionate game developer with expertise in both AAA 
-                and indie game development. Currently serving as a team lead at Beach Bum Ltd, I balance 
-                commercial game development with personal creative projects.
+                Based in Melbourne, Australia, I'm a passionate game developer. Currently serving as a 
+                team lead at Beach Bum Ltd, I also work on smaller indie titles in my spare time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 My journey in game development spans multiple platforms and genres, from mobile games 
