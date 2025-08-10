@@ -33,7 +33,7 @@ const HeroSection = () => {
           
         </div>
         
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown size={32} className="text-muted-foreground" />
         </div>
       </div>
