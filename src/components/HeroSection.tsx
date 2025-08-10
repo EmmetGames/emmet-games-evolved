@@ -19,7 +19,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Game Developer from Melbourne, Australia
+            Unity Team Lead & Indie Developer
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -33,7 +33,7 @@ const HeroSection = () => {
           
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown size={32} className="text-muted-foreground" />
         </div>
       </div>

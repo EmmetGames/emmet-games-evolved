@@ -2,32 +2,52 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
+import fillIcon from "@/assets/fill-game-icon.png";
+import memeMastersIcon from "@/assets/meme-masters-icon.png";
+import youreNotSupposedIcon from "@/assets/youre-not-supposed-icon.png";
+import dustbusterIcon from "@/assets/dustbuster-icon.png";
 
 const GamesSection = () => {
   const games = [
     {
-      title: "Game 1",
-      category: "TBD",
-      description: "Game description to be updated.",
-      tags: ["Unity", "C#"],
+      title: "F I L L",
+      year: "2020",
+      category: "Hypercasual",
+      description: "Fill up the screen with fun shapes!",
+      tags: ["Unity", "Mobile"],
       status: "Released",
-      color: "from-blue-500/20 to-purple-500/20"
+      icon: fillIcon,
+      type: "mobile"
     },
     {
-      title: "Game 2", 
-      category: "TBD",
-      description: "Game description to be updated.",
-      tags: ["Mobile", "Unity"],
+      title: "Meme Masters", 
+      year: "2020",
+      category: "Social - Online Multiplayer",
+      description: "Compete with friends to make the funniest memes!",
+      tags: ["Mobile", "Unity", "Multiplayer"],
       status: "Released",
-      color: "from-green-500/20 to-blue-500/20"
+      icon: memeMastersIcon,
+      type: "mobile"
     },
     {
-      title: "Game 3",
-      category: "TBD", 
-      description: "Game description to be updated.",
-      tags: ["Strategy", "Mobile"],
+      title: "You're Not Supposed To Be Here",
+      year: "2019",
+      category: "Arcade - Stealth", 
+      description: "Sneak through, collect intel, and DON'T. GET. CAUGHT.",
+      tags: ["Mobile", "Stealth"],
       status: "Released",
-      color: "from-orange-500/20 to-red-500/20"
+      icon: youreNotSupposedIcon,
+      type: "mobile"
+    },
+    {
+      title: "Dustbuster",
+      year: "2022",
+      category: "Arcade - Action",
+      description: "Made for TriJam #172",
+      tags: ["PC", "Game Jam"],
+      status: "Released",
+      icon: dustbusterIcon,
+      type: "pc"
     }
   ];
 
@@ -43,57 +63,126 @@ const GamesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {games.map((game, index) => (
-            <Card 
-              key={game.title}
-              className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
-            >
-              <div className={`h-48 bg-gradient-to-br ${game.color} relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute top-4 left-4">
-                  <Badge variant={game.status === "Released" ? "default" : "secondary"}>
-                    {game.status}
-                  </Badge>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Button size="icon" className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-glow-primary">
-                    <Play size={20} />
-                  </Button>
-                </div>
-              </div>
-              
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      {game.title}
-                    </h3>
-                    <p className="text-sm text-accent">{game.category}</p>
-                  </div>
-                  <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ExternalLink size={16} />
-                  </Button>
-                </div>
-                
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  {game.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2">
-                  {game.tags.map((tag) => (
-                    <Badge 
-                      key={tag} 
-                      variant="outline" 
-                      className="text-xs border-muted hover:border-primary hover:text-primary transition-colors"
-                    >
-                      {tag}
+        {/* Mobile Games Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-8 text-foreground">Mobile Games</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {games.filter(game => game.type === "mobile").map((game) => (
+              <Card 
+                key={game.title}
+                className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
+              >
+                <div className="h-48 bg-muted relative overflow-hidden flex items-center justify-center">
+                  <img 
+                    src={game.icon} 
+                    alt={`${game.title} game icon`}
+                    className="w-24 h-24 object-contain"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge variant="secondary" className="bg-primary text-primary-foreground">
+                      {game.year}
                     </Badge>
-                  ))}
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                    <Button size="icon" className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-glow-primary">
+                      <Play size={20} />
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+                
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {game.title}
+                      </h3>
+                      <p className="text-sm text-accent">{game.category}</p>
+                    </div>
+                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ExternalLink size={16} />
+                    </Button>
+                  </div>
+                  
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    {game.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    {game.tags.map((tag) => (
+                      <Badge 
+                        key={tag} 
+                        variant="outline" 
+                        className="text-xs border-muted hover:border-primary hover:text-primary transition-colors"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* PC Games Section */}
+        <div>
+          <h3 className="text-2xl font-bold mb-8 text-foreground">PC Games</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {games.filter(game => game.type === "pc").map((game) => (
+              <Card 
+                key={game.title}
+                className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
+              >
+                <div className="h-48 bg-muted relative overflow-hidden flex items-center justify-center">
+                  <img 
+                    src={game.icon} 
+                    alt={`${game.title} game icon`}
+                    className="w-24 h-24 object-contain"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge variant="secondary" className="bg-primary text-primary-foreground">
+                      {game.year}
+                    </Badge>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                    <Button size="icon" className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-glow-primary">
+                      <Play size={20} />
+                    </Button>
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {game.title}
+                      </h3>
+                      <p className="text-sm text-accent">{game.category}</p>
+                    </div>
+                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ExternalLink size={16} />
+                    </Button>
+                  </div>
+                  
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    {game.description}
+                  </p>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    {game.tags.map((tag) => (
+                      <Badge 
+                        key={tag} 
+                        variant="outline" 
+                        className="text-xs border-muted hover:border-primary hover:text-primary transition-colors"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">

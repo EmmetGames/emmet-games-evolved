@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
   const skills = [
-    "Unity", "C#", "JavaScript", "React", "Game Design", 
-    "3D Modeling", "Shader Programming", "Team Leadership",
+    "Unity", "C#", "JavaScript", "Game Design", 
+    "2D Art", "Music", "Jenkins", "Team Leadership",
     "Project Management", "Indie Development"
   ];
 
@@ -25,25 +25,27 @@ const AboutSection = () => {
           <div className="relative">
             <Card className="p-8 bg-gradient-card border-border/50 hover:shadow-glow-accent transition-all duration-500">
               <div className="w-full h-64 bg-muted rounded-lg mb-6 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
-                <div className="absolute bottom-4 left-4 text-sm text-muted-foreground">
-                  Game Developer Portrait
-                </div>
+                <img 
+                  src="/src/assets/emmet-profile.jpg" 
+                  alt="Emmet Winter - Game Developer"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
               </div>
             </Card>
           </div>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Game Developer & Team Lead</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Emmet Winter</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Based in Melbourne, Australia, I'm a passionate game developer. Currently serving as a 
-                team lead at Beach Bum Ltd, I also work on smaller indie titles in my spare time.
+                Emmet Winter is a game developer currently based in Melbourne, Victoria. He is currently a Unity team lead and architect at Beach Bum Ltd, and also makes smaller independent games in his spare time.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                EmmetGames is his one-man studio.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My journey in game development spans multiple platforms and genres, from mobile games 
-                to console experiences. I believe in creating games that not only entertain but also 
-                push the boundaries of interactive storytelling.
+                Emmet grew up playing video games with his family and friends. They had a profound impact on his childhood - as he grew up he relocated numerous times. Video games helped him bond with others, learn new skills and keep himself busy. In high school, Emmet was introduced to programming and immediately sought out to combine his newfound skills with his favourite hobby which was game making.
               </p>
             </div>
 
