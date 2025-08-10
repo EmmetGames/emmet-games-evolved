@@ -14,7 +14,7 @@ const GamesSection = () => {
       year: "2020",
       category: "Hypercasual",
       description: "Fill up the screen with fun shapes!",
-      tags: ["Unity", "Mobile"],
+      tags: ["Unity", "Mobile", "Puzzle", "Hypercasual"],
       status: "Released",
       icon: fillIcon,
       type: "mobile"
@@ -24,7 +24,7 @@ const GamesSection = () => {
       year: "2020",
       category: "Social - Online Multiplayer",
       description: "Compete with friends to make the funniest memes!",
-      tags: ["Mobile", "Unity", "Multiplayer"],
+      tags: ["Mobile", "Unity", "Multiplayer", "Funny"],
       status: "Released",
       icon: memeMastersIcon,
       type: "mobile"
@@ -34,17 +34,37 @@ const GamesSection = () => {
       year: "2019",
       category: "Arcade - Stealth", 
       description: "Sneak through, collect intel, and DON'T. GET. CAUGHT.",
-      tags: ["Mobile", "Stealth"],
+      tags: ["Mobile", "Stealth", "Arcade"],
       status: "Released",
       icon: youreNotSupposedIcon,
       type: "mobile"
     },
     {
-      title: "Dustbuster",
-      year: "2022",
-      category: "Arcade - Action",
-      description: "Made for TriJam #172",
-      tags: ["PC", "Game Jam"],
+      title: "Dying For Treasure",
+      year: "2020",
+      category: "Platformer - Puzzle",
+      description: "Made in collaboration with Amit Klein and Inbar Zoref for the 2020 VimJam. Hunt for treasure and make sure not to let the treasure hunt you!",
+      tags: ["PC", "Platformer", "Puzzle", "Game Jam"],
+      status: "Released",
+      icon: dustbusterIcon,
+      type: "pc"
+    },
+    {
+      title: "Interstellar Guardian",
+      year: "2018",
+      category: "Arcade - Top-Down Shooter",
+      description: "Protect the Earth from the evil Surge and try to stay alive!",
+      tags: ["PC", "Arcade", "Shooter"],
+      status: "Released",
+      icon: dustbusterIcon,
+      type: "pc"
+    },
+    {
+      title: "Plunging",
+      year: "2017",
+      category: "Story-Driven",
+      description: "There's only one way down.",
+      tags: ["PC", "Story", "Adventure"],
       status: "Released",
       icon: dustbusterIcon,
       type: "pc"
