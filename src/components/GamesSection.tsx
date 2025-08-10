@@ -6,6 +6,8 @@ import fillIcon from "@/assets/fill-game-icon.png";
 import memeMastersIcon from "@/assets/meme-masters-icon.png";
 import youreNotSupposedIcon from "@/assets/youre-not-supposed-icon.png";
 import dustbusterIcon from "@/assets/dustbuster-icon.png";
+import interstellarGuardianIcon from "@/assets/interstellar-guardian-icon.png";
+import plungingIcon from "@/assets/plunging-icon.png";
 
 const GamesSection = () => {
   const games = [
@@ -56,7 +58,7 @@ const GamesSection = () => {
       description: "Protect the Earth from the evil Surge and try to stay alive!",
       tags: ["PC", "Arcade", "Shooter"],
       status: "Released",
-      icon: dustbusterIcon,
+      icon: interstellarGuardianIcon,
       type: "pc"
     },
     {
@@ -66,7 +68,7 @@ const GamesSection = () => {
       description: "There's only one way down.",
       tags: ["PC", "Story", "Adventure"],
       status: "Released",
-      icon: dustbusterIcon,
+      icon: plungingIcon,
       type: "pc"
     }
   ];
