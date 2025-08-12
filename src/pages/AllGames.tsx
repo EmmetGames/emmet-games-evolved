@@ -23,7 +23,7 @@ const AllGames = () => {
       genre: "Hypercasual - Puzzle",
       description: "Fill up the screen with fun shapes!",
       icon: fillGameIcon,
-      playLink: "https://play.google.com/store/apps/developer?id=EmmetGames",
+      playLink: "https://play.google.com/store/apps/details?id=com.EmmetGames.FILL",
       platform: "Android"
     },
     {
@@ -32,7 +32,7 @@ const AllGames = () => {
       genre: "Social - Online Multiplayer",
       description: "Compete with friends to make the funniest memes!",
       icon: memeMastersIcon,
-      playLink: "https://play.google.com/store/apps/developer?id=EmmetGames",
+      playLink: "https://play.google.com/store/apps/details?id=com.EmmetGames.MemeMasters",
       platform: "Android"
     },
     {
@@ -41,7 +41,7 @@ const AllGames = () => {
       genre: "Arcade - Stealth",
       description: "Sneak through, collect intel, and DON'T. GET. CAUGHT.",
       icon: youreNotSupposedIcon,
-      playLink: "https://play.google.com/store/apps/developer?id=EmmetGames",
+      playLink: "https://play.google.com/store/apps/details?id=emmetgames.game.youre_not_supposed_to_be_here",
       platform: "Android"
     }
   ];
