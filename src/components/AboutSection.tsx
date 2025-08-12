@@ -24,7 +24,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="relative">
             <Card className="p-8 bg-gradient-card border-border/50 hover:shadow-glow-accent transition-all duration-500">
-              <div className="w-full h-64 bg-muted rounded-lg mb-6 relative overflow-hidden">
+              <div className="w-full aspect-square bg-muted rounded-lg mb-6 relative overflow-hidden">
                 <img 
                   src="/src/assets/emmet-profile.jpg" 
                   alt="Emmet Winter - Game Developer"
