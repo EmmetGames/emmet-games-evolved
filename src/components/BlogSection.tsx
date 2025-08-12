@@ -2,37 +2,41 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import blogTop10Image from "@/assets/blog-top10-2024.webp";
+import blogCabinetImage from "@/assets/blog-cabinet-complete.webp";
 
 const BlogSection = () => {
   const posts = [
     {
       title: "My Top 10 Video Games for 2024",
-      excerpt: "",
-      date: "",
-      readTime: "",
-      category: "",
-      featured: true
+      excerpt: "2024 is coming to a close, and just like every year that normally brings about a period of reflection. Specifically, for...",
+      date: "Dec 28, 2024",
+      readTime: "11 min read",
+      category: "Gaming",
+      featured: true,
+      image: blogTop10Image
     },
     {
       title: "Cabinet Complete", 
-      excerpt: "",
-      date: "",
-      readTime: "",
-      category: ""
+      excerpt: "TL;DR - Everything worked out and the console display works! Howdy everyone. On my last blog post I said that the next part was...",
+      date: "Jul 16, 2024",
+      readTime: "2 min read",
+      category: "Development",
+      image: blogCabinetImage
     },
     {
       title: "To Plan A Mockingbird",
-      excerpt: "",
-      date: "",
-      readTime: "",
-      category: ""
+      excerpt: "Exploring the creative process behind game development and project planning.",
+      date: "Jun 15, 2024",
+      readTime: "5 min read",
+      category: "Design"
     },
     {
       title: "The Quest To Connect Consoles",
-      excerpt: "",
-      date: "",
-      readTime: "",
-      category: ""
+      excerpt: "A journey through hardware integration and the challenges of console connectivity.",
+      date: "May 10, 2024",
+      readTime: "8 min read",
+      category: "Hardware"
     }
   ];
 
@@ -52,7 +56,12 @@ const BlogSection = () => {
           {/* Featured Post */}
           <Card className="mb-12 bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500">
             <div className="grid md:grid-cols-2 gap-0">
-              <div className="h-64 md:h-auto bg-gradient-to-br from-primary/20 to-accent/20 relative">
+              <div className="h-64 md:h-auto relative overflow-hidden">
+                <img 
+                  src={posts[0].image} 
+                  alt={posts[0].title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4">
                   <Badge className="bg-primary text-primary-foreground">Featured</Badge>
                 </div>
@@ -89,7 +98,16 @@ const BlogSection = () => {
                 key={post.title}
                 className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
               >
-                <div className="h-48 bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+                <div className="h-48 relative overflow-hidden">
+                  {post.image ? (
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-secondary to-muted"></div>
+                  )}
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute top-4 left-4">
                     <Badge variant="secondary">{post.category}</Badge>
