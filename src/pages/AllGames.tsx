@@ -238,7 +238,7 @@ const AllGames = () => {
               ))}
             </div>
 
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 mt-20">
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
                 Game Jams
               </p>
