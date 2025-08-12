@@ -48,26 +48,6 @@ const AllGames = () => {
 
   const pcGames = [
     {
-      title: "Dustbuster",
-      year: "2022",
-      genre: "Arcade - Action", 
-      description: "As the legendary DustBuster, it's your job to keep the pesky dust off the shelf.",
-      subtext: "Made for TriJam #172",
-      icon: dustbusterIcon,
-      playLink: "https://emmet.itch.io/dustbuster",
-      platform: "PC"
-    },
-    {
-      title: "Dying For Treasure",
-      year: "2020",
-      genre: "Platformer - Puzzle",
-      description: "Hunt for treasure and make sure not to let the treasure hunt you!",
-      subtext: "Made in collaboration with Amit Klein and Inbar Zoref for the 2020 VimJam.",
-      icon: dyingForTreasureIcon,
-      playLink: "https://emmet.itch.io/dying-for-treasure",
-      platform: "PC"
-    },
-    {
       title: "Interstellar Guardian",
       year: "2018",
       genre: "Arcade - Top-Down Shooter",
@@ -86,6 +66,29 @@ const AllGames = () => {
       platform: "PC"
     }
   ];
+
+  const pcGamesGameJams = [
+  {
+    title: "Dustbuster",
+    year: "2022",
+    genre: "Arcade - Action", 
+    description: "As the legendary DustBuster, it's your job to keep the pesky dust off the shelf.",
+    subtext: "Made for TriJam #172",
+    icon: dustbusterIcon,
+    playLink: "https://emmet.itch.io/dustbuster",
+    platform: "PC"
+  },
+  {
+    title: "Dying For Treasure",
+    year: "2020",
+    genre: "Platformer - Puzzle",
+    description: "Hunt for treasure and make sure not to let the treasure hunt you!",
+    subtext: "Made in collaboration with Amit Klein and Inbar Zoref for the 2020 VimJam.",
+    icon: dyingForTreasureIcon,
+    playLink: "https://emmet.itch.io/dying-for-treasure",
+    platform: "PC"
+  }
+];
 
   const GameCard = ({ game, isMobile = false }: { game: any; isMobile?: boolean }) => (
     <Card className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2">
@@ -212,7 +215,7 @@ const AllGames = () => {
                 PC <span className="text-primary">Games</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                Desktop experiences showcasing creativity and technical skill
+                Desktop experiences & games
               </p>
               
               <a 
@@ -231,6 +234,18 @@ const AllGames = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {pcGames.map((game) => (
+                <GameCard key={game.title} game={game} />
+              ))}
+            </div>
+
+            <div className="text-center mb-16">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+                Game Jams
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {pcGamesGameJams.map((game) => (
                 <GameCard key={game.title} game={game} />
               ))}
             </div>
