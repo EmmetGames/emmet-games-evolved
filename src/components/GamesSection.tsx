@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import fillIcon from "@/assets/fill-game-icon.png";
 import memeMastersIcon from "@/assets/meme-masters-icon.png";
 import youreNotSupposedIcon from "@/assets/youre-not-supposed-icon.png";
@@ -208,8 +209,8 @@ const GamesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Projects
+          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Link to="/games">View All Projects</Link>
           </Button>
         </div>
       </div>
