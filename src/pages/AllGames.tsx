@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ExternalLink, Play, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,9 @@ import interstellarGuardianIcon from "@/assets/interstellar-guardian-icon.png";
 import plungingIcon from "@/assets/plunging-icon.png";
 
 const AllGames = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const mobileGames = [
     {
       title: "F I L L",

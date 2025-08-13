@@ -26,8 +26,18 @@ const Navigation = () => {
             {navItems.map((item) => (
               <a
                 key={item.name}
-                href={item.href}
+                href={item.href.startsWith('#') ? `/${item.href}` : item.href}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                onClick={(e) => {
+                  if (item.href.startsWith('#')) {
+                    e.preventDefault();
+                    if (window.location.pathname !== '/') {
+                      window.location.href = `/${item.href}`;
+                    } else {
+                      document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }
+                }}
               >
                 {item.name}
               </a>
@@ -51,9 +61,19 @@ const Navigation = () => {
             {navItems.map((item) => (
               <a
                 key={item.name}
-                href={item.href}
+                href={item.href.startsWith('#') ? `/${item.href}` : item.href}
                 className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  setIsOpen(false);
+                  if (item.href.startsWith('#')) {
+                    e.preventDefault();
+                    if (window.location.pathname !== '/') {
+                      window.location.href = `/${item.href}`;
+                    } else {
+                      document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }
+                }}
               >
                 {item.name}
               </a>

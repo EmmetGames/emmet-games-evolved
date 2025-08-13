@@ -2,43 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import blogTop10Image from "@/assets/blog-top10-2024.webp";
-import blogCabinetImage from "@/assets/blog-cabinet-complete.webp";
-import blogMockingbirdImage from "@/assets/blog-mockingbird.jpg";
-import blogQuestImage from "@/assets/blog-quest-consoles.jpg";
+import { Link } from "react-router-dom";
+import { getFeaturedPost, getOtherPosts } from "@/data/blogPosts";
 
 const BlogSection = () => {
-  const posts = [
-    {
-      title: "My Top 10 Video Games for 2024",
-      excerpt: "2024 is coming to a close, and just like every year that normally brings about a period of reflection. Specifically, for...",
-      date: "Dec 28, 2024",
-      readTime: "11 min read",
-      featured: true,
-      image: blogTop10Image
-    },
-    {
-      title: "Cabinet Complete", 
-      excerpt: "TL;DR - Everything worked out and the console display works! Howdy everyone. On my last blog post I said that the next part was...",
-      date: "Jul 16, 2024",
-      readTime: "2 min read",
-      image: blogCabinetImage
-    },
-    {
-      title: "To Plan A Mockingbird",
-      excerpt: "Exploring the creative process behind game development and project planning.",
-      date: "Jun 15, 2024",
-      readTime: "5 min read",
-      image: blogMockingbirdImage
-    },
-    {
-      title: "The Quest To Connect Consoles",
-      excerpt: "A journey through hardware integration and the challenges of console connectivity.",
-      date: "May 10, 2024",
-      readTime: "8 min read",
-      image: blogQuestImage
-    }
-  ];
+  const featuredPost = getFeaturedPost();
+  const otherPosts = getOtherPosts();
 
   return (
     <section id="blog" className="py-20 bg-background">
@@ -58,8 +27,8 @@ const BlogSection = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="h-64 md:h-auto relative overflow-hidden">
                 <img 
-                  src={posts[0].image} 
-                  alt={posts[0].title}
+                  src={featuredPost?.image} 
+                  alt={featuredPost?.title}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4">
@@ -69,20 +38,22 @@ const BlogSection = () => {
               </div>
               <div className="p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold mb-4 text-foreground hover:text-primary transition-colors">
-                  {posts[0].title}
+                  {featuredPost?.title}
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {posts[0].excerpt}
+                  {featuredPost?.excerpt}
                 </p>
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
                   <Calendar size={16} className="mr-2" />
-                  {posts[0].date}
+                  {featuredPost?.date}
                   <Clock size={16} className="ml-4 mr-2" />
-                  {posts[0].readTime}
+                  {featuredPost?.readTime}
                 </div>
-                <Button className="w-fit bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Read More
-                  <ArrowRight size={16} className="ml-2" />
+                <Button className="w-fit bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+                  <Link to="/blog">
+                    Read More
+                    <ArrowRight size={16} className="ml-2" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -90,7 +61,7 @@ const BlogSection = () => {
 
           {/* Other Posts */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.slice(1).map((post) => (
+            {otherPosts.map((post) => (
               <Card 
                 key={post.title}
                 className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
@@ -135,8 +106,8 @@ const BlogSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Posts
+          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+            <Link to="/blog">View All Posts</Link>
           </Button>
         </div>
       </div>
