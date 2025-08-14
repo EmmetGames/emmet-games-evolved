@@ -4,6 +4,13 @@ import blogTop10Image from "@/assets/blog-top10-2024.webp";
 import blogCabinetImage from "@/assets/blog-cabinet-complete.webp";
 import blogMockingbirdImage from "@/assets/blog-mockingbird.jpg";
 import blogQuestConsoles from "@/assets/blog-quest-consoles.jpg";
+import blogLifeIsStrange from "@/assets/blog-life-is-strange-true-colors.png";
+import blogCabinetCutting from "@/assets/blog-cabinet-cutting.webp";
+import blogCabinetFinished from "@/assets/blog-cabinet-finished.webp";
+import blogPyramidScheme from "@/assets/blog-pyramid-scheme-teaser.jpg";
+import blogFillGooglePlay from "@/assets/blog-fill-google-play.png";
+import blogFillGameplay from "@/assets/blog-fill-gameplay.gif";
+import blogMemeMastersPlayStore from "@/assets/blog-meme-masters-play-store.png";
 
 export interface BlogPost {
   id: string;
