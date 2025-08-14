@@ -266,7 +266,7 @@ I'm already working on additional content packs and exploring possibilities for 
 
 Thank you to everyone who supported FILL during development. Your feedback and encouragement made this release possible!
 
-You can download FILL now on [your preferred platform]. I hope you enjoy playing it as much as I enjoyed creating it!`,
+You can download FILL now on your preferred platform. I hope you enjoy playing it as much as I enjoyed creating it!`,
     date: "Jul 8, 2024",
     readTime: "4 min read",
     image: blogFillGameplay
