@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts, BlogPost } from "@/data/blogPosts";
+import ReactMarkdown from "react-markdown";
 
 const AllBlogs = () => {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
@@ -89,12 +90,20 @@ const AllBlogs = () => {
           </div>
         </header>
         
-        <div 
-          className="prose-content text-foreground leading-relaxed"
-          dangerouslySetInnerHTML={{ 
-            __html: post.content.replace(/\n/g, '<br />').replace(/## /g, '<h2>').replace(/<h2>/g, '<h2 class="text-2xl font-bold mt-8 mb-4 text-foreground">').replace(/_([^_]+)_/g, '<em>$1</em>') 
-          }}
-        />
+        <article className="prose prose-lg max-w-none dark:prose-invert">
+          <ReactMarkdown
+            components={{
+              img: ({node, ...props}) => (
+                <img
+                  {...props}
+                  className="rounded-lg my-6 mx-auto" // ⬅️ Tailwind padding/margin styles
+                />
+              ),
+            }}
+          >
+            {post.content}
+          </ReactMarkdown>
+        </article>
       </article>
     </div>
   );
