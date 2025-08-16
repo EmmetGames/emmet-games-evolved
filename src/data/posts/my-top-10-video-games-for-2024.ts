@@ -1,5 +1,15 @@
 import blogTop10Image from "@/assets/blog-top10-2024.webp";
-import blogCabinetFinished1 from "@/assets/CompleteSetup1.jpg";
+import game1 from "@/assets/top-ten-2024/TopTenGames1.png";
+import game2 from "@/assets/top-ten-2024/TopTenGames2.png";
+import game3 from "@/assets/top-ten-2024/TopTenGames3.png";
+import game4 from "@/assets/top-ten-2024/TopTenGames4.png";
+import game5 from "@/assets/top-ten-2024/TopTenGames5.png";
+import game6 from "@/assets/top-ten-2024/TopTenGames6.webp";
+import game7 from "@/assets/top-ten-2024/TopTenGames7.png";
+import game8 from "@/assets/top-ten-2024/TopTenGames8.png";
+import game9 from "@/assets/top-ten-2024/TopTenGames9.png";
+import game10 from "@/assets/top-ten-2024/TopTenGames10.png";
+
 import { BlogPost } from "../blogPosts";
 
 export const myTop10VideoGamesFor2024: BlogPost = {
@@ -25,7 +35,7 @@ Without further ado...
 
 ## Number 10 - Life is Strange: True Colors
 
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game10})
 
 Life is Strange is a game (and now series) near and dear to many, offering an exploration of people and their relationships, all through the lens of young adulthood in America. Throw into the mix mystery elements and a cinematic, heartfelt story and you got yourself a game that isn't for everyone - a lot more akin to a movie or a novel than an action game - but truly loved and appreciated by those who care for it. For better or worse, I am one of those people.
 
@@ -47,7 +57,7 @@ As a plus, it handles controversial topics of the modern world such as environme
 
 
 ## Number 9 - Duskers
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game9})
 
 Duskers is a hyper-niche game that is played entirely via terminal commands. In it, you pilot a group of drones as you explore derelict spacecraft in an eerie, unforgiving universe.
 Developed by couple Tim & Holly Keenan who form Misfits Attic, it is an exceptionally unique game that captures the feeling of being alone in space, where your eyes and ears are all sensors.
@@ -66,7 +76,7 @@ If you ever wanted to see how you could game-ify controlling drones via a termin
 
 
 ## Number 8 - Darkest Dungeon II
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game8})
 
 Darkest Dungeon II is the long-awaited sequel to indie hit Darkest Dungeon, which happily marries dungeon-delving RPGs with the dark and brooding world of Lovecraftian horror.
 It is developed by Red Hook Studios.
@@ -90,7 +100,7 @@ It is an unashamedly repetitive and difficult game, but one that I found strange
 
 
 
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game7})
 
 Tunic, a game developed by small studio Isometricorp Games and largely the brainchild of Andrew Shouldice, is a fantastic game that expertly deals in information.
 On the surface it is an action-adventure RPG that plays essentially like the classic Zelda with modern quality-of-life improvements thrown on top.
@@ -110,7 +120,7 @@ I love games where you have abilities at your disposal and the only thing preven
 
 ## Number 6 - The Forgotten City
 
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game6})
 
 The Forgotten City is a surprisingly rich and interesting game developed by Australian Studio Modern Storyteller and the brain child of Nick Pearce.
 It's a mystery adventure game, where the main reward of playing isn't a flashy sword or a high score - it's figuring out what's going on.
@@ -129,7 +139,7 @@ If you're looking for a 'detective' game with a twist, look no further than The 
 
 
 ## Number 5 - Reus 2
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game5})
 
 
 Reus 2, developed by Dutch indie studio Abbey Games, is the sequel to the God-sim management game Reus. In this game, you control elemental gods that use their powers to assist humans as they develop their civilizations.
@@ -147,7 +157,7 @@ I've spent too many nights staying up late and playing this addictive game, and 
 
 
 ## Number 4 - Disco Elysium - The Final Cut
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game4})
 
 Despite this list having many heavy hitters in the writing department, there is no doubt in my mind that Disco Elysium by ZA/UM wins that category by a landslide.
 
@@ -169,7 +179,7 @@ In short - this is an immersive, thought-provoking game like no other, and if yo
 
 
 ## Number 3 - Baldur's Gate 3
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game3})
 
 And there it is. The big kahuna. The Game of the Year 2023, meticulously crafted by Larian Studios, a legendary game that will surely be talked about for several years to come.
 Baldur's Gate 3.
@@ -191,7 +201,7 @@ I think the fact that it's easily a 100+ hour game and that I would happily repl
 
 
 ## Number 2 - We Love Katamari REROLL + Royal Reverie
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game2})
 
 There are few games I can think of that are so in-your-face, unapologetically fun as We Love Katamari, the sequel to the iconic Katamari Damacy.
 It's a game that isn't afraid to be colorful, funny and quirky, blast energized Japanese music at you, and simply let you play.
@@ -209,7 +219,7 @@ Its level design is stellar, and it hits all the right notes of being fun and fl
 
 
 ## Number 1 - Animal Well
-![Complete cabinet](${blogCabinetFinished1})
+![Complete cabinet](${game1})
 
 My top game of 2024 is the expertly crafted Animal Well by indie talent Billy Basso.
 It is a puzzle-platformer-metroidvania that is built out of layers upon layers of secrets.
