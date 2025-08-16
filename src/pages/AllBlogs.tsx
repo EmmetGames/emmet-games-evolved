@@ -93,6 +93,12 @@ const AllBlogs = () => {
         <article className="prose prose-lg max-w-none dark:prose-invert">
           <ReactMarkdown
             components={{
+              h2: ({node, ...props}) => (
+                <h2
+                  {...props}
+                  className="text-2xl font-bold mt-8 mb-4 text-foreground"
+                />
+              ),
               img: ({node, ...props}) => (
                 <img
                   {...props}
