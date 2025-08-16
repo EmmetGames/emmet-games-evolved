@@ -42,5 +42,8 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export const getFeaturedPost = () => blogPosts.find(post => post.featured);
-export const getOtherPosts = () => blogPosts.filter(post => !post.featured);
+export const getOtherPosts = (limit?: number) => {
+  const otherPosts = blogPosts.filter(post => !post.featured);
+  return limit ? otherPosts.slice(0, limit) : otherPosts;
+};
 export const getPostById = (id: string) => blogPosts.find(post => post.id === id);

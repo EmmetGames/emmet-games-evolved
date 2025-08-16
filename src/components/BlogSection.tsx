@@ -7,7 +7,7 @@ import { getFeaturedPost, getOtherPosts } from "@/data/blogPosts";
 
 const BlogSection = () => {
   const featuredPost = getFeaturedPost();
-  const otherPosts = getOtherPosts();
+  const otherPosts = getOtherPosts(4);
 
   return (
     <section id="blog" className="py-20 bg-background">
