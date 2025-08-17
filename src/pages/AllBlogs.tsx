@@ -7,6 +7,28 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts, BlogPost } from "@/data/blogPosts";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
+
+// Allow iframes in the sanitize schema (optional but safer if using sanitize)
+const sanitizeSchema = {
+  ...defaultSchema,
+  tagNames: [...(defaultSchema.tagNames || []), "iframe"],
+  attributes: {
+    ...defaultSchema.attributes,
+    iframe: [
+      "src",
+      "title",
+      "allow",
+      "allowfullscreen",
+      "frameborder",
+      "width",
+      "height",
+      "loading",
+      "referrerpolicy",
+    ],
+  },
+};
 
 const AllBlogs = () => {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
@@ -92,18 +114,22 @@ const AllBlogs = () => {
         
         <article className="prose prose-lg max-w-none dark:prose-invert">
           <ReactMarkdown
+            rehypePlugins={[
+              rehypeRaw,                 // parse raw HTML in markdown
+              // [rehypeSanitize, sanitizeSchema], // uncomment if you want sanitization
+            ]}
             components={{
               h2: ({node, ...props}) => (
-                <h2
-                  {...props}
-                  className="text-2xl font-bold mt-8 mb-4 text-foreground"
-                />
+                <h2 {...props} className="text-2xl font-bold mt-8 mb-4 text-foreground" />
               ),
               img: ({node, ...props}) => (
-                <img
-                  {...props}
-                  className="rounded-lg my-6 mx-auto" // ⬅️ Tailwind padding/margin styles
-                />
+                <img {...props} className="rounded-lg my-6 mx-auto" />
+              ),
+              // Make iframes responsive + styled
+              iframe: ({node, ...props}) => (
+                <div className="my-6 aspect-video w-full overflow-hidden rounded-lg">
+                  <iframe {...props} className="w-full h-full" />
+                </div>
               ),
             }}
           >
