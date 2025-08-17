@@ -15,7 +15,7 @@ import { fillAlpha2IsOutNow } from "./posts/fill-alpha-2-is-out-now";
 import { fillAlphaIsOutNow } from "./posts/fill-alpha-is-out-now";
 import { pieceOfCake } from "./posts/piece-of-cake";
 import { fillingInThePieces } from "./posts/filling-in-the-pieces";
-// import { redditMoment } from "./posts/reddit-moment";
+import { redditMoment } from "./posts/reddit-moment";
 // import { vlogginItUp } from "./posts/vloggin-it-up";
 // import { turningOverANewLeaf } from "./posts/turning-over-a-new-leaf";
 // import { theFinalMeme } from "./posts/the-final-meme";
@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
   fillAlphaIsOutNow,
   pieceOfCake,
   fillingInThePieces,
-  // redditMoment,
+  redditMoment,
   // vlogginItUp,
   // turningOverANewLeaf,
   // theFinalMeme,

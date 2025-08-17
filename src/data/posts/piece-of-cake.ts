@@ -1,5 +1,4 @@
 import { BlogPost } from "../blogPosts";
-import { YouTubeEmbed } from "@/components/YoutubeEmbed";
 
 export const pieceOfCake: BlogPost = {
   id: "piece-of-cake",

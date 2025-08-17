@@ -4,10 +4,7 @@ export const fillingInThePieces: BlogPost = {
   id: "filling-in-the-pieces",
   title: "Filling in the pieces",
   excerpt: "A short gameplay video showcase.",
-  content: `
-# Filling in the pieces
-
-Hiya! Welcome to another Dev Vlog!
+  content: `Hiya! Welcome to another Dev Vlog!
 
 <iframe
   src="https://www.youtube.com/embed/VKcs949bf-4"
