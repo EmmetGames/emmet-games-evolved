@@ -1,4 +1,5 @@
 import { BlogPost } from "../blogPosts";
+import gameplayFootage from "@/assets/blog-fill-gameplay.gif";
 
 export const turningOverANewLeaf: BlogPost = {
   id: "turning-over-a-new-leaf",
@@ -22,7 +23,7 @@ However, there's a catch - as you do so, hazards will be flying to and fro. You'
 
 Since I have so much time to work on games now, I actually managed to implement most of the game's mechanics in one day. Here's what it looks like!
 
-Notice how the objects in the scene interact with the light. This is possible thanks to Unity's 2D light system.
+![Notice how the objects in the scene interact with the light. This is possible thanks to Unity's 2D light system.](${gameplayFootage})
 
 I still have heaps to implement, like a life system, win/lose conditions, and several levels, but I'm happy with what I have so far. I especially like the use of 2D lighting and shadows, to give it a minimalistic feel :)
 
