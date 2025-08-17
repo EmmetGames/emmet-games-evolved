@@ -16,9 +16,9 @@ import { fillAlphaIsOutNow } from "./posts/fill-alpha-is-out-now";
 import { pieceOfCake } from "./posts/piece-of-cake";
 import { fillingInThePieces } from "./posts/filling-in-the-pieces";
 import { redditMoment } from "./posts/reddit-moment";
-// import { vlogginItUp } from "./posts/vloggin-it-up";
-// import { turningOverANewLeaf } from "./posts/turning-over-a-new-leaf";
-// import { theFinalMeme } from "./posts/the-final-meme";
+import { vlogginItUp } from "./posts/vloggin-it-up";
+import { turningOverANewLeaf } from "./posts/turning-over-a-new-leaf";
+import { theFinalMeme } from "./posts/the-final-meme";
 // import { iHateThis } from "./posts/i-hate-this";
 // import { memeMasterARetrospect } from "./posts/meme-master-a-retrospect";
 // import { theMemeMaster } from "./posts/the-meme-master";
@@ -70,9 +70,9 @@ export const blogPosts: BlogPost[] = [
   pieceOfCake,
   fillingInThePieces,
   redditMoment,
-  // vlogginItUp,
-  // turningOverANewLeaf,
-  // theFinalMeme,
+  vlogginItUp,
+  turningOverANewLeaf,
+  theFinalMeme,
   // iHateThis,
   // memeMasterARetrospect,
   // theMemeMaster,
