@@ -26,9 +26,11 @@ I think games are a wonderful hobby so I always like to recommend games that may
 
 This list is a celebration of good games, where I write what I liked about them and hopefully pique your interest to give them a try.
 
+<br />
 
 It's important to clarify this list is simply of games I've played this year and not necessarily titles that released in 2024. I'm not a professional game reviewer, I'm just a guy who likes games.
 
+<br />
 
 Without further ado...
 
@@ -37,24 +39,27 @@ Without further ado...
 
 ![Complete cabinet](${game10})
 
-Life is Strange is a game (and now series) near and dear to many, offering an exploration of people and their relationships, all through the lens of young adulthood in America. Throw into the mix mystery elements and a cinematic, heartfelt story and you got yourself a game that isn't for everyone - a lot more akin to a movie or a novel than an action game - but truly loved and appreciated by those who care for it. For better or worse, I am one of those people.
+_Life is Strange_ is a game (and now series) near and dear to many, offering an exploration of people and their relationships, all through the lens of young adulthood in America. Throw into the mix mystery elements and a cinematic, heartfelt story and you got yourself a game that isn't for everyone - a lot more akin to a movie or a novel than an action game - but truly loved and appreciated by those who care for it. For better or worse, I am one of those people.
 
+<br />
 
-Since its development by Dontnod Entertainment in 2015, multiple entries in the series have been released, some by Deck Nine Games, all to relatively colder receptions than the original title. It was hard to recapture that 'magic' that made the original game work. I can assume part of the challenge stemmed from the fact that the original game was so different than anything that existed before, that it was kind of hard to nail what elements "made" a Life is Strange game and what were just set dressings.
+Since its development by _Dontnod Entertainment_ in 2015, multiple entries in the series have been released, some by _Deck Nine Games_, all to relatively colder receptions than the original title. It was hard to recapture that 'magic' that made the original game work. I can assume part of the challenge stemmed from the fact that the original game was so different than anything that existed before, that it was kind of hard to nail what elements "made" a Life is Strange game and what were just set dressings.
 
+<br />
 
-Life is Strange: True Colors is a step in the right direction in my opinion.
-Developed by Deck Nine Games, it tells an interesting story about interesting characters that feel "real" and provides an experience that's half movie and half interactive story.
+_Life is Strange: True Colors_ is a step in the right direction in my opinion.
+Developed by _Deck Nine Games_, it tells an interesting story about interesting characters that feel "real" and provides an experience that's half movie and half interactive story.
 
 In it, you play as Alex Chen who moves to Colorado and tries to re-integrate into society while dealing with her troubled past.
 
+<br />
 
 It's a game that looks, sounds and feels like a warm cup of coco on a cold & snowy night. It pulls on your heartstrings and portrays interesting, three-dimensional characters that really sell the immersion factor of the game.
 It's a short, well-written and well-told story, and I'm glad I got to play it.
 
+<br />
 
 As a plus, it handles controversial topics of the modern world such as environmentalism, LGBTQ+ themes and drug use with grace.
-
 
 ## Number 9 - Duskers
 ![Complete cabinet](${game9})
