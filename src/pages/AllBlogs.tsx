@@ -114,6 +114,9 @@ const AllBlogs = () => {
               h2: ({node, ...props}) => (
                 <h2 {...props} className="text-2xl font-bold mt-8 mb-4 text-foreground" />
               ),
+              h3: ({node, ...props}) => (
+                <h3 {...props} className="text-xl font-semibold mt-6 mb-3 text-foreground" />
+              ),
               img: ({node, ...props}) => (
                 <img {...props} className="rounded-lg my-6 mx-auto" />
               ),
