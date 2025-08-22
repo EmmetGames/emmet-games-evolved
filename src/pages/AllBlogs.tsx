@@ -86,15 +86,7 @@ const AllBlogs = () => {
         Back to All Posts
       </Button>
       
-      <article className="prose prose-lg max-w-none dark:prose-invert">
-        <div className="aspect-[16/8] mb-8 overflow-hidden rounded-lg">
-          <img 
-            src={post.image} 
-            alt={post.title}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
+      <article className="prose prose-lg max-w-none dark:prose-invert">        
         <header className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             {post.title}
