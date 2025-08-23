@@ -9,6 +9,7 @@ import { blogPosts, BlogPost } from "@/data/blogPosts";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
+import remarkBreaks from "remark-breaks";
 
 // Allow iframes in the sanitize schema (optional but safer if using sanitize)
 const sanitizeSchema = {
@@ -110,6 +111,7 @@ const AllBlogs = () => {
               rehypeRaw,                 // parse raw HTML in markdown
               // [rehypeSanitize, sanitizeSchema], // uncomment if you want sanitization
             ]}
+            remarkPlugins={[remarkBreaks]}
             components={{
               h2: ({node, ...props}) => (
                 <h2 {...props} className="text-2xl font-bold mt-8 mb-4 text-foreground" />
