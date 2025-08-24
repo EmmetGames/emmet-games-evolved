@@ -1,4 +1,4 @@
-import blogQuestConsoles from "@/assets/blog-quest-consoles.jpg";
+import photo0 from "@/assets/the-quest-to-connect-consoles/photo0.webp";
 import { BlogPost } from "../blogPosts";
 
 export const whereInTheWorldIsEmmetgames: BlogPost = {
@@ -56,5 +56,5 @@ For now, I'm just grateful for the opportunity to explore the world and bring th
 Have you ever had travel experiences that influenced your creative work? I'd love to hear about them!`,
   date: "Sep 18, 2024",
   readTime: "4 min read",
-  image: blogQuestConsoles
+  image: photo0
 };

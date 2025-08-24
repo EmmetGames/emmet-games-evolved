@@ -1,184 +1,92 @@
-import blogQuestConsoles from "@/assets/blog-quest-consoles.jpg";
+import photo0 from "@/assets/the-quest-to-connect-consoles/photo0.webp";
+import photo1 from "@/assets/the-quest-to-connect-consoles/photo1.png";
+import photo2 from "@/assets/the-quest-to-connect-consoles/photo2.png";
+import photo3 from "@/assets/the-quest-to-connect-consoles/photo3.png";
+
 import { BlogPost } from "../blogPosts";
 
 export const theQuestToConnectConsoles: BlogPost = {
   id: "the-quest-to-connect-consoles",
   title: "The Quest To Connect Consoles",
   excerpt: "Join me on an epic journey as I attempt to connect multiple gaming consoles to a single display system, navigating the challenges of cable management and technical hurdles.",
-  content: `# The Quest To Connect Consoles
+  content: `Hi everyone!
+When you gaze up at the night sky and see a stars dotting the heavens, you are, in some capacity, a time traveler. Of course, this is mostly figurative - you travel through time the same as most people around you do and perceive it similarly. However, there is a very real, practical way in which you are a indeed time traveler.
+You see, the stars at which you gaze, they are not modern depictions of themselves, but rather ancient depictions that are being revealed to us in real time.
+Due to the speed of light, and due to their literally astronomical distance from us, we see the stars not as they are, but as they were ten, hundreds, thousands or more years ago. We are gazing into their past!
+It's not a still image of their past - stars are ever-changing in our skies, being created and dying. We, on Earth, right now, have a unique glimpse into how they were all those years ago.
+I think there is something novel about the idea of being able to capture the essence of something as it was and being able to experience it even after its time is past.
+That's probably one of the reasons I collect retro video game consoles.
 
-For years, I've been accumulating gaming consoles. What started as a simple collection has grown into something resembling a small gaming museum. The problem? Getting them all connected to my main TV without constantly swapping cables.
+So for those who don't know - collecting video game consoles has been a hobby of mine for quite some time now. I have a modest collection of about 20-odd consoles, most of them being Nintendo and Sony systems. They're all in working order and I have all their cables and adapters so I can play them (though I rarely do, for reasons we'll get into later).
+I feel like it's an experience quite like no other to play an old game, holding a piece of technology and history in your hand in the form of a controller, and experiencing it like other people were 10, 20 or even 40 years ago.
 
-This is the story of my quest to create the ultimate console setup.
+As a game developer, it's an honest, sobering and profound look at what video games were, how they evolved and what we can learn from them. We really don't have to invent the wheel when it was invented tens of thousands of times before us over the course of half a decade.
+Here are some pictures from my current collection, in case you were curious:
 
-## The Problem
+![Image](${photo0})
+![Image](${photo1})
+![Image](${photo2})
+![Image](${photo3})
 
-By last count, I have 12 different gaming consoles spanning from the original NES to the PlayStation 5. Each has its own power requirements, output cables, and quirks. My TV has exactly 4 HDMI inputs.
+Where am I going with all this?
+Those among you who are astute would have noticed that none of these consoles are plugged in. In other words - they're all show (albeit a good show with the glass and lighting and whatnot).
 
-The math doesn't work.
+The reason might come off as a little lazy, but hooking them up is just such a pain!
+Sure, even though I keep all my cables organized and nearby, it's still a hassle of finding the right ones, then grabbing the relevant adapters (as pretty much none of these consoles use the right plug for my country, plus some of them require different voltage/current), and then moving my massive cabinet so I can fiddle with cables in the back.
+All to play what is, more often than not, a fun game, but not one I would be playing for 100 hours. More likely than not I would be playing it for 10 to 20 minutes, tops, before putting it away. As a result it often takes me longer to set up than I spend time playing the actual game.
 
-## Initial Attempts
 
-My first solution was simple: just swap cables when I wanted to play a different console. This worked fine when I only had a few systems, but as the collection grew, this became increasingly frustrating.
+It's a massive shame because this collection should be put to use, and I would love to do it, just more conveniently!
 
-Next, I tried a basic HDMI switch. This helped with the newer consoles but didn't solve the problem of older systems with different output types (composite, component, S-video, etc.).
+So this is what this blog is about (5 paragraphs in) - my quest to connect my consoles to my television so I can play them with ease!
 
-## Research Phase
+Rest assured I am still working on actual video games at this time as well, but I just figured this would be a fun project to do on the side.
+In any case, this is the perfect time since I'll be moving very soon, so if in any case I'll be moving my cabinet and reorganizing everything, why not make it better?
 
-I spent weeks researching solutions:
+So without further ado:
 
-**HDMI Switches**: Good for modern consoles, but limited in how many inputs they support.
 
-**Audio/Video Receivers**: Can handle multiple input types but tend to add input lag and are expensive.
+The Goal
+I want to connect my consoles to the power and to the TV, so they will be more easily playable.
 
-**Upscalers**: Convert older signals to HDMI but each console needs its own unit.
+Obviously these are heaps of consoles, so I will have to use some sort of switch system to connect them to the TV. It doesn't have 20 ports (especially AVs).
+Same goes for the power since I don't want to be running 20 consoles at once when I am only playing one.
 
-**Professional Switching Systems**: Designed for broadcast use, way overkill for home use.
+The more convenient the solution is, the better, so I am going to give myself stretch goals - sort of side-quests, if you will, to see if I can make my solution more effective. These bonus goals are, from least to most complex
 
-## The Plan
+Set up the display switch in such a way so I would be able to change the display remotely (via remote/app)
 
-After much research, I settled on a hybrid approach:
+Set up the power source in such a way so I able to turn a console on remotely (via remote/app)
 
-1. **Multiple HDMI Switches**: Daisy-chained to handle all HDMI-capable consoles
-2. **RetroTINK 5X**: A high-quality upscaler for older consoles
-3. **Custom Cable Management**: Built into the entertainment center
-4. **Universal Power Solution**: Switched power strips to manage the chaos
+Somehow sync the systems together so with the press of a button/tap of an app I could turn on my TV, switch to the right display port and power the console
 
-## Implementation Challenges
+That last one is a doozey, and I honestly doubt we'll be able to pull it off, but who knows? Maybe I'll prevail.
 
-### Cable Management
 
-The first challenge was physical: where do all these cables go? My entertainment center wasn't designed for this many devices.
+The Plan
+It's all well and good I want all these things, but how I am going to get this done?
 
-I ended up modifying the cabinet, adding ventilation, cable routing, and even installing a small cooling fan system.
+Well, I'm obviously going to start with research. I'll look at what others have done and the pitfalls they've hit. After that, I'll get started with the hopes of meeting the original goal somehow.
 
-### Signal Quality
+Generally speaking, the plan should look like this:
 
-Different consoles output different signal qualities. Getting older consoles to look good on a modern 4K TV required careful calibration of the upscaler.
+Research
 
-Some consoles (looking at you, N64) have notoriously poor video output that no amount of upscaling can completely fix.
+Sketch out design for solution
 
-### Input Lag
+Create holes in the back of my cabinet to allow me to pass cables to my consoles
 
-Every device in the signal chain adds a small amount of input lag. For action games, this can be noticeable. I had to carefully select switches and upscalers with minimal lag.
+Get some electric splitters (preferably with the ability to turn individual sockets on/off) for my whole console collection
 
-### Power Management
+Get/make a switch system for all my display cables to connect to my TV
 
-Twelve consoles plus switches and upscalers meant a lot of power draw. I had to install additional circuits to handle the load safely.
+Test & tinker
 
-## The Technical Setup
 
-Here's what the final system looks like:
 
-**Tier 1 - Modern Consoles (HDMI native)**:
-- PlayStation 5, Xbox Series X, Nintendo Switch, PlayStation 4
-
-These go directly into a high-quality 8-port HDMI switch with low input lag.
-
-**Tier 2 - HD Era (Component/HDMI)**:
-- PlayStation 3, Xbox 360, Wii
-
-These connect to the RetroTINK 5X for upscaling to 4K, then to the main switch.
-
-**Tier 3 - Retro Consoles (Composite/S-Video)**:
-- NES, SNES, Genesis, PlayStation 1, Nintendo 64, Dreamcast
-
-Each has been modded or paired with high-quality cables for the best possible signal to the RetroTINK.
-
-## Software Solutions
-
-Beyond hardware, I needed software solutions:
-
-**Universal Remote**: Programmed to control the entire system with custom macros for each console.
-
-**Input Selection Guide**: A simple reference sheet (and eventually mobile app) to remember which input combination gets you to each console.
-
-**Game Library Database**: Tracking which games work with which consoles, since I have some overlap.
-
-## Unexpected Benefits
-
-This project had some unexpected positive side effects:
-
-**Rediscovered Games**: Having everything easily accessible meant I played older games more often.
-
-**Friends and Family Engagement**: The "museum" setup became a conversation starter and party attraction.
-
-**Content Creation**: Easy access to any console made creating gameplay videos much simpler.
-
-**Preservation**: Properly storing and maintaining the consoles helps preserve gaming history.
-
-## Costs and Considerations
-
-This wasn't a cheap project:
-
-- HDMI switches: $200
-- RetroTINK 5X: $400
-- Cable modifications: $300
-- Power infrastructure: $200
-- Miscellaneous (cables, adapters, etc.): $400
-
-**Total: Around $1,500**
-
-For a casual gamer, this would be massive overkill. But for someone who regularly plays across multiple generations of consoles, it's been worth every penny.
-
-## Lessons Learned
-
-**Plan for Expansion**: I thought 12 consoles was enough. I was wrong. The system is already at capacity.
-
-**Quality Matters**: Cheap HDMI switches introduce problems. Spending more on quality components saved headaches later.
-
-**Document Everything**: With this many connections, keeping track of what goes where is crucial.
-
-**Heat Management**: All these devices generate heat. Proper ventilation is essential.
-
-## Future Improvements
-
-The system isn't perfect. Future improvements I'm considering:
-
-**Automated Switching**: Using smart switches that can be controlled via app or voice commands.
-
-**Individual Game Selection**: Instead of just switching consoles, switching directly to specific games.
-
-**Streaming Integration**: Adding capture cards to enable streaming from any console.
-
-**VR Integration**: As VR headsets become more numerous, they'll need their own solution.
-
-## Was It Worth It?
-
-Absolutely. The convenience of being able to play any game from the past 40 years with just a few button presses has rekindled my love for gaming history.
-
-More importantly, it's created a shared experience. Friends who visit are amazed by the setup and often want to play games they haven't touched in decades.
-
-## The Bigger Picture
-
-This project represents something larger than just technical problem-solving. It's about preserving and celebrating gaming history. Each of these consoles represents a different era of game design, technology, and culture.
-
-Having them all accessible in one place creates opportunities for comparison, learning, and appreciation that wouldn't exist otherwise.
-
-## Advice for Others
-
-If you're considering a similar project:
-
-**Start Small**: Begin with just a few consoles and expand gradually.
-
-**Research Thoroughly**: Understand the signal types and requirements before buying hardware.
-
-**Budget Appropriately**: Quality components cost more but save frustration.
-
-**Plan for Growth**: Whatever you think is your final configuration, you'll probably want to expand.
-
-**Enjoy the Process**: The journey of building the system can be as rewarding as using it.
-
-## Conclusion
-
-The quest to connect all my consoles taught me about signal processing, cable management, and electrical systems. But more than that, it reminded me why I love gaming in the first place.
-
-There's something magical about being able to jump from a 2024 game back to something from 1985 and appreciate how far we've come while still enjoying the timeless gameplay that made those old games classics.
-
-Gaming history is worth preserving, and if that preservation happens to make your living room look like the world's coolest arcade, well, that's just a bonus.
-
-Next up: figuring out how to integrate handheld consoles into the setup. The quest continues!`,
-  date: "May 20, 2024",
+I guess it's time for me to start researching. I'll write another post on the blog once I have a better grasp on things.
+Thanks for reading through this, and I hope you'll check in again on my next update!`,
+  date: "Jun 26, 2024",
   readTime: "7 min read", 
-  image: blogQuestConsoles
+  image: photo0
 };
