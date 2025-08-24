@@ -10,8 +10,10 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkBreaks from "remark-breaks";
-
+import remarkGfm from "remark-gfm"; // GitHub-flavored markdown (tables, strikethrough, etc.)
+import rehypeHighlight from "rehype-highlight"; // Code syntax highlighting
 // Allow iframes in the sanitize schema (optional but safer if using sanitize)
+
 const sanitizeSchema = {
   ...defaultSchema,
   tagNames: [...(defaultSchema.tagNames || []), "iframe"],
@@ -106,19 +108,14 @@ const AllBlogs = () => {
         </header>
         
         <article className="prose prose-lg max-w-none dark:prose-invert">
-          <ReactMarkdown
-            rehypePlugins={[
-              rehypeRaw,                 // parse raw HTML in markdown
-              // [rehypeSanitize, sanitizeSchema], // uncomment if you want sanitization
-            ]}
-            remarkPlugins={[remarkBreaks]}
-            components={{
-              h2: ({node, ...props}) => (
-                <h2 {...props} className="text-2xl font-bold mt-8 mb-4 text-foreground" />
-              ),
-              h3: ({node, ...props}) => (
-                <h3 {...props} className="text-xl font-semibold mt-6 mb-3 text-foreground" />
-              ),
+         <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[
+            rehypeHighlight,
+            rehypeRaw,
+            [rehypeSanitize, sanitizeSchema],
+          ]}
+          components={{
               img: ({node, ...props}) => (
                 <img {...props} className="rounded-lg my-6 mx-auto" />
               ),
@@ -130,7 +127,7 @@ const AllBlogs = () => {
               ),
             }}
           >
-            {post.content}
+          {post.content}
           </ReactMarkdown>
         </article>
       </article>
