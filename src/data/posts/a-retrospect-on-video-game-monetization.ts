@@ -1,4 +1,4 @@
-import blogTop10Image from "@/assets/blog-top10-2024.webp";
+import blogTop10Image from "@/assets/aRetrospectOnVideoGameMonetization.avif";
 import { BlogPost } from "../blogPosts";
 
 export const aRetrospectOnVideoGameMonetization: BlogPost = {
@@ -116,7 +116,7 @@ With consideration you can be smarter about the way you engage with video games.
 
 Anyways, thanks for sticking around with me throughout this blog post. I would love to hear your opinions on the topic - if you think I misrepresented a form of monetization, if I forgot something, or anything else.
 Have a nice weekend!`,
-  date: "Nov 15, 2024",
-  readTime: "8 min read",
+  date: "Mar 2, 2024",
+  readTime: "10 min read",
   image: blogTop10Image
 };

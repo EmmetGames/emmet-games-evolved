@@ -66,6 +66,6 @@ Generally speaking, the plan should look like this:
 I guess it's time for me to start researching. I'll write another post on the blog once I have a better grasp on things.
 Thanks for reading through this, and I hope you'll check in again on my next update!`,
   date: "Jun 26, 2024",
-  readTime: "7 min read", 
+  readTime: "4 min read", 
   image: photo0
 };

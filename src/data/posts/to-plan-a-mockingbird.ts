@@ -124,7 +124,7 @@ Anyways, that's all for me now. Thanks for checking in, and good night!
 
 
 `,
-  date: "Jun 15, 2024", 
-  readTime: "5 min read",
+  date: "Jul 9 15, 2024", 
+  readTime: "7 min read",
   image: grommetImage
 };
