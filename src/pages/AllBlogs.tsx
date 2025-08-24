@@ -109,7 +109,7 @@ const AllBlogs = () => {
         
         <article className="prose prose-lg max-w-none dark:prose-invert">
          <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
+          remarkPlugins={[remarkGfm, remarkBreaks]}
           rehypePlugins={[
             rehypeHighlight,
             rehypeRaw,
