@@ -1,45 +1,32 @@
-import blogTop10Image from "@/assets/blog-top10-2024.webp";
+import image from "@/assets/smallUpdate.avif";
 import { BlogPost } from "../blogPosts";
 
 export const smallUpdate: BlogPost = {
   id: "small-update",
   title: "Small Update",
   excerpt: "A quick check-in on current projects and upcoming releases.",
-  content: `# Small Update
+  content: `Hi everyone, long time no see! I just wanted to give you a small update on how things are going, and to let you know about some exciting stuff!
 
-Just a quick check-in with everyone! Development has been moving along steadily, though perhaps not as visibly as usual.
+Even though these are troubled times, personally I've been holding up pretty well. My new job as a full-time Unity developer is lots of fun, and I'm learning lots of new things every day. I can almost _feel_ how I'm becoming a better game developer by just being there and absorbing information and good habits :)
 
-## What I'm Working On
+But enough of that boring stuff, let's get to the fun stuff!
 
-**Project Alpha**: Still in early stages, but the core mechanics are starting to feel really good. Can't share too much yet, but it involves puzzle-solving and has a unique art style I'm really excited about.
+### New Game
 
-**Fill Updates**: Based on player feedback, I'm working on some quality-of-life improvements and a few new levels. Nothing major, but small improvements that should make the experience smoother.
+That's right! I'm actually working on a new indie game!
+Going back to my roots, this is a 100% free, no monetization game for mobile devices. I don't want to spoil too much, but it is a meta-game - that is, a game where its existence is more of a game than the actual game itself. On top of that, it's a satire/joke game. Honestly, the game is mostly complete, and I'm really looking forward to releasing it soon :)
 
-**Tool Development**: I've been building some internal tools to speed up my development process. Not glamorous, but these efficiency improvements will pay dividends on future projects.
+![Image](${image})
 
-## Recent Challenges
+What could it be about?
 
-The main challenge lately has been balancing polish versus new features. There's always the temptation to add more content, but sometimes the better choice is to make what's already there work better.
+### Support Drop for _Meme Masters_
 
-I'm trying to be more disciplined about this - defining what "done" means for each feature before I start working on it.
+To clarify - _Meme Masters_ is still playable! Just with less servers.
+Still, it is with a heavy heart that I inform you that I will no longer support the extensive multiplayer servers of Meme Masters. From now on, only up to 10 players will be able to play the game at the same time. Simply put, the server costs were no longer worth the trouble, considering this is an older game now that basically nobody plays. Let's hope that in the future I'll be able to repurpose this money for more fun experiences :)
 
-## Community Feedback
-
-The response to recent releases has been overwhelmingly positive, which is incredibly motivating. Special thanks to everyone who's been providing detailed feedback and bug reports.
-
-Your input directly influences what gets prioritized in updates, so please keep it coming!
-
-## What's Next
-
-The next few weeks will be focused on:
-- Finishing the Fill update
-- Getting Project Alpha to a playable alpha state
-- Planning the roadmap for the rest of the year
-
-Nothing earth-shattering, but steady progress toward some exciting releases.
-
-Thanks for following along with the journey!`,
-  date: "Jul 28, 2024",
+That's it for now. I promise I have some really interesting topics to bring up in the future, so stay tuned if you wanna learn some nifty game-dev stuff!`,
+  date: "May 14, 2021",
   readTime: "2 min read",
-  image: blogTop10Image
+  image: image
 };
