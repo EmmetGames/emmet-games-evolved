@@ -1,158 +1,66 @@
+import logo from "@/assets/blogIcon.jpg";
 import blogFillGooglePlay from "@/assets/blog-fill-google-play.png";
-import blogFillGameplay from "@/assets/blog-fill-gameplay.gif";
+import heart from "@/assets/heart.webp";
 import { BlogPost } from "../blogPosts";
 
 export const fillIsOut: BlogPost = {
   id: "fill-is-out",
   title: "Fill is Out!",
   excerpt: "The official release of Fill is here! Learn about the development journey and what players can expect from this puzzle adventure.",
-  content: `# Fill is Out!
+  content: `
+<iframe
+  src="https://www.youtube.com/embed/vgAwpwfFM3w?si=1WQ1cC-zRJe2HGAD"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  loading="lazy"
+></iframe>
 
-![Fill on Google Play](${blogFillGooglePlay})
+Hey there, Emmet here, and welcome to another dev vlog. Sorry for the radio silence over the past 2 months – life has been pretty hectic and I was too caught up with the development of FILL to actually write about it. It might not look like it, but making these vlog posts actually takes quite a bit of time, and since I want to really devote to game development the time and energy it deserves, I’ve decided to scale back the frequency of vlogs in general.
+As for FILL, I am very happy and proud to say that it’s complete. I’ve made the game, and it is now available to download for free on the Google Play Store. Please give it a try and let me know what you think.
 
-After months of development, playtesting, and polish, I'm thrilled to announce that **Fill** is now available!
+![Image](${blogFillGooglePlay})
+https://play.google.com/store/apps/details?id=com.EmmetGames.FILL
 
-## What is Fill?
 
-Fill is a minimalist puzzle game about, well, filling shapes. But don't let the simple concept fool you - the game evolves and introduces new mechanics that keep the experience fresh throughout.
+What’s really great is that I’ve had the time to refine it and even add a couple of fun extra modes like Endless mode which tests the limits of your ability and Zen Mode for when you want to sit back and relax a little.
+Honestly, since I’ve added so many things to the game, it’s difficult to know where to start, but I’ll try and recap some of the things which I found more interesting.
 
-![Fill gameplay demonstration](${blogFillGameplay})
+**Ad Mediation**
 
-The core mechanic is simple: tap to fill areas of the screen. But as you progress, you'll encounter:
-- Moving obstacles that change the playing field
-- Time-based challenges that test your speed
-- Multi-stage puzzles that require planning
-- Color-mixing mechanics that add depth
+Last time I vlogged I talked about how I’ll be implementing Ad Mediation in my game, and a bit about its strengths and drawbacks. Now that I’m past implementing it, I’d love to share my two cents on the matter:
+Ad Mediation is good, but it is not for everyone. In comparison to just integrating with an Ad Network’s SDK, it requires WAY more work. It took me about a week or two of 9-hour workdays to set up ad mediation correctly in my game. For each ad network, you need to make an account, define and create all the ads you’ll want in your game, configure things like payment details, then download the SDK, add integration logic in your code, and then also integrate in your mediation console.
+Objectively, it performs better than a single ad network. You have more ad sources and you get better prices, but you really need to think twice if this is the right step for you. For me I believe it was, but it’s not the ultimate solution I originally thought it to be.
 
-## The Development Journey
+**Drag N’ Release Controls**
 
-Fill started as a simple prototype during a game jam. The initial idea was just "what if filling in shapes was a game?" But as I developed it further, I realized there was potential for something deeper.
+In the end, I’ve integrated a new optional control scheme into my game – Drag N’ Release controls, where instead of holding down your finger on the screen to let the shape grow over time, you drag your finger across the screen to stretch or shrink your shape, and release it to create it.
+I’ve added this control scheme because I came to learn that some testers were struggling with their fingers covering the shape they were creating. This wasn’t an issue for most players, but I didn’t want to alienate dozens of potential players when the solution was relatively simple.
+You may remember that I’ve worked on this control scheme way back and eventually decided to drop it. I’m really glad I did, though, because implementing it this time was much easier. Just goes to show that you’ll never know if and when your previous work will become relevant again.
 
-### Early Prototyping
+**Leaderboards**
 
-The first version was incredibly basic - just a circle that you could fill by holding down the mouse button. But even that simple interaction felt oddly satisfying.
+I’ve ended up implementing online leaderboards per level in my game. While in concept this is a small and novel idea, this actually ended up being the thing I spent the most time on in this game’s development. Crazy, I know.
+The complexity came from two main factors – security, and the project’s packages.
+The game’s leaderboard operations had to be secure, and this was clear from the start. If they weren’t this would allow hackers to post their data to my user’s devices, which was something I really wanted to avoid at all costs. Because of this, I had to pursue a solution that handled authentication, but could also do so using a Google Play Services account (as we were using this anyway for achievements in the game).
+The game uses many packages, most of them because of mediation. This caused an issue because when being compiled to the APK format, all the Java classes couldn’t fit into a single Dex file. This meant that I had to use many inefficient and problematic methods to try and fit all those classes together, from using Proguard and Minify, to using custom multidex configurations. This was an issue because the most common and straightforward ways to implement and use most database solutions in a Unity project were to add its SDK to the game.
+I’ll spare you from all the trials and tribulations, but the solution I used in the end was Google’s Firebase, and in particular their realtime database platform. After integrating their SDK into my game, I was able to quite easily send and retrieve data from the database in a secured and monitored manner.
 
-I started experimenting with different shapes, obstacles, and timing challenges. Each addition opened up new puzzle possibilities.
+**Endless & Zen modes**
 
-### Finding the Core
+These modes were always stretch goals for me, but I never thought I’d actually get to make them. They both took surprisingly little time to make (maybe 2-3 days for each mode), and this is in great part to the software design I’ve used while creating my game, as well as the similarities they shared with many of the existing mechanics in the game. I didn’t have to re-invent the wheel for everything, and it really boosted my development speed.
+This makes me think that perhaps I should try and develop some standard libraries and packages for myself, so I’ll be able to jumpstart my development whenever I start working on a new project.
 
-The breakthrough came when I realized that the game wasn't really about filling shapes - it was about understanding space and flow. The best puzzles were ones where players had to think about how the fill would move through the available space.
+<br /><br />
 
-This insight guided all subsequent design decisions.
+Sorry for rambling on for so long, and thank you so much for bearing with me. I have some good news and some bad news.
+The good news are that I’ll be starting work soon as a full-time Unity game developer! I’ll be joining an existing studio here in Israel, but for now I’ll keep it anonymous. The studio looks very cool, and I was really impressed with their games, which I genuinely enjoyed playing. I’m really happy that I’ll be able to do this full-time now, and use the skills which I’ve learned to make games for people to play.
+The bad news are that because I’ll be moving on to developing games full time, I won’t really have time for my indie projects anymore, at least not in the foreseeable future. This means that for now I’ll be putting EmmetGames on hiatus, as I focus on my professional career in this new studio.
+I’d like to thank you for joining me on the ride so far, and hopefully it won’t be long before I have time again to continue making games by myself.
+That’s it for now. Thanks, and have a good one.
 
-### Art and Audio
-
-For the visual style, I wanted something that would complement the meditative nature of the gameplay. Clean lines, soothing colors, and smooth animations all serve to create a calming experience.
-
-The audio design was particularly important. The sound of filling needs to be satisfying without becoming annoying over hundreds of levels.
-
-## Reception and Learning
-
-The response from beta testers was incredibly positive. Players particularly appreciated:
-- The gradual learning curve
-- The satisfying feedback of completing levels  
-- The lack of time pressure in most levels
-- The clean, accessible visual design
-
-Areas for improvement that emerged:
-- Some levels felt too similar
-- The difficulty curve had a few sharp spikes
-- More variety in mechanics was desired
-
-## Technical Challenges
-
-Building Fill taught me several important lessons:
-
-**Performance Optimization**: Smooth animation was crucial for the game feel, which required careful optimization of the fill algorithms.
-
-**Touch Controls**: Making the touch controls feel responsive across different devices took significant iteration.
-
-**Level Progression**: Balancing the introduction of new mechanics with player skill development is an ongoing challenge.
-
-## Platform Strategy
-
-Fill is launching on mobile first, specifically Android via Google Play. This platform makes sense for several reasons:
-
-- The touch controls are native to mobile
-- The session length fits mobile play patterns
-- The visual style works well on phone screens
-- Easy distribution and updates
-
-Depending on reception, I'm considering:
-- iOS release
-- PC/Steam version with mouse controls
-- Nintendo Switch adaptation
-
-## Marketing Lessons
-
-This release taught me a lot about indie game marketing:
-
-**Start Early**: Building awareness before launch is crucial
-**Screenshots Matter**: The visual style needs to be immediately appealing
-**Demo/Beta Access**: Getting the game in players' hands early provides valuable feedback
-**Community Building**: Engaging with puzzle game communities opened up new audiences
-
-## What's Next for Fill?
-
-Based on player feedback, I'm already working on:
-
-**Content Updates**: New level packs with fresh mechanics
-**Quality of Life**: Better level selection, progress tracking
-**Accessibility**: Color-blind friendly options, motor accessibility improvements
-**Localization**: Supporting more languages for global reach
-
-## Lessons for Future Projects
-
-Fill's development taught me several valuable lessons:
-
-**Prototype Early and Often**: The core concept evolved significantly from the initial idea
-**Player Testing is Essential**: Internal testing can only catch so much
-**Polish Makes a Difference**: The final 20% of development adds 80% of the polish
-**Scope Management**: Knowing when to stop adding features is crucial
-
-## Business Results
-
-While it's still early, the initial metrics are encouraging:
-- Strong retention rates suggest engaging gameplay
-- Low refund rates indicate satisfied players
-- Positive reviews highlight the relaxing nature of the game
-- Download numbers are growing steadily
-
-## Personal Reflections
-
-Working on Fill has been incredibly rewarding. It's a different type of game than I usually make - more meditative and less story-driven - but that challenge helped me grow as a designer.
-
-The positive player response has been especially gratifying. Seeing reviews that mention how the game helps people relax or unwind reminds me why I love making games.
-
-## Community and Feedback
-
-The Fill community has been amazing. Players have shared screenshots of their favorite levels, suggested new mechanics, and even created fan art.
-
-This engagement is what makes indie development worthwhile - the direct connection between developer and players.
-
-## Technical Deep Dive
-
-For fellow developers interested in the technical aspects:
-
-**Engine**: Built in Unity for cross-platform compatibility
-**Fill Algorithm**: Custom flood-fill implementation optimized for smooth animation
-**Level Editor**: Custom tool for rapid level creation and testing
-**Analytics**: Integrated analytics to understand player behavior and pain points
-
-## Download and Play
-
-Fill is available now on Google Play Store. It's free to try with optional premium levels available as in-app purchases.
-
-I'm incredibly proud of how this game turned out and excited to see how players respond to it. If you give it a try, please let me know what you think!
-
-## Thank You
-
-Huge thanks to everyone who provided feedback during development, especially the beta testers who helped identify and fix numerous issues.
-
-Also thanks to the indie dev community for continued support and encouragement throughout the development process.
-
-Here's to many more projects and the ongoing adventure of indie game development!`,
-  date: "Jun 10, 2024",
-  readTime: "6 min read",
-  image: blogFillGooglePlay
+![Image](${heart})`,
+  date: "Jan 29, 2021",
+  readTime: "5 min read",
+  image: logo
 };
