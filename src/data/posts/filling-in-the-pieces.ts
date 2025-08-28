@@ -1,3 +1,4 @@
+import logo from "@/assets/blogIcon.jpg";
 import { BlogPost } from "../blogPosts";
 
 export const fillingInThePieces: BlogPost = {
@@ -18,5 +19,5 @@ In the video I showcase some game footage. Please let me know if you have any su
 `,
   date: "Oct 5, 2020",
   readTime: "1 min read",
-  image: null
+  image: logo
 };
