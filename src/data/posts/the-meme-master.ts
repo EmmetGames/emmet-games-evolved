@@ -10,7 +10,7 @@ export const theMemeMaster: BlogPost = {
 Despite many unexpected hurdles, I am thrilled to announce the the first version of _Meme Masters_ is out!
 That's right! You, the person reading this, can go right now to the Play Store and download this game I've spent the better part of a year working on! What are you waiting for?
 
-[![DOWNLOAD NOW!](https://play.google.com/store/apps/details?id=com.EmmetGames.MemeMasters)
+[DOWNLOAD NOW!](https://play.google.com/store/apps/details?id=com.EmmetGames.MemeMasters)
 
 ![image](${logo})
 
