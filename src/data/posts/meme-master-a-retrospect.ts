@@ -4,9 +4,9 @@ import tutorial from "@/assets/meme-masters-a-retrospect/tutorial.png";
 import logo from "@/assets/meme-masters-a-retrospect/logo.webp";
 
 
-export const memeMastersARetrospect: BlogPost = {
-  id: "meme-masters-a-retrospect",
-  title: "Meme Masters: A Retrospect",
+export const memeMasterARetrospect: BlogPost = {
+  id: "meme-master-a-retrospect",
+  title: "Meme Master: A Retrospect",
   excerpt: "Fair warning - most of this blog post is going to be about looking back at the journey of Meme Masters and a retrospect on how well it...",
   content: `Fair warning - most of this blog post is going to be about looking back at the journey of _Meme Masters_ and a retrospect on how well it did. But before I get into all that, let's cover what's new!
 
