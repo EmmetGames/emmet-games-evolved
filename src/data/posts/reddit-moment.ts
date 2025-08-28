@@ -1,3 +1,4 @@
+import logo from "@/assets/redditMoment.jpg";
 import { BlogPost } from "../blogPosts";
 
 export const redditMoment: BlogPost = {
@@ -20,5 +21,5 @@ Thank you so much if you've been part of this. You're the best <3
 `,
   date: "Oct 1, 2020",
   readTime: "1 min read",
-  image: null
+  image: logo
 };
