@@ -1,9 +1,10 @@
+import logo from "@/assets/blogIcon.jpg";
 import { BlogPost } from "../blogPosts";
 
 export const vlogginItUp: BlogPost = {
   id: "vloggin-it-up",
   title: "Vloggin' it up!",
-  excerpt: "Trying something new: vlogging! Let me know if you prefer vlogs or blogs, and subscribe for updates.",
+  excerpt: "Hi everyone! Today I'll be trying out something different - vlogging!",
   content: `Hi everyone! Today I'll be trying out something different - vlogging! I figured listening to me and seeing visuals on-screen would be more interesting than reading my nerdy articles about different Unity packages.
 
 <iframe
@@ -18,5 +19,5 @@ Please let me know if you prefer vlogs or blogs, and make sure to subscribe to m
 `,
   date: "Sep 26, 2020",
   readTime: "1 min read",
-  image: null
+  image: logo
 };
