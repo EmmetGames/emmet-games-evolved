@@ -62,5 +62,5 @@ Those who are reading this, don't make the mistakes I did. Choose technologies b
 That's all for today. See you around :)`,
   date: "Jul 10, 2020",
   readTime: "4 min read",
-  image: pepe
+  image: mainMenu
 };
