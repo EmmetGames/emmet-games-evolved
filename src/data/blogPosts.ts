@@ -20,7 +20,7 @@ import { vlogginItUp } from "./posts/vloggin-it-up";
 import { turningOverANewLeaf } from "./posts/turning-over-a-new-leaf";
 import { theFinalMeme } from "./posts/the-final-meme";
 import { iHateThis } from "./posts/i-hate-this";
-import { memeMastersARetrospect } from "./posts/meme-master-a-retrospect";
+import { memeMasterARetrospect } from "./posts/meme-master-a-retrospect";
 import { theMemeMaster } from "./posts/the-meme-master";
 // import { whosMemeIsThisAnyway } from "./posts/whos-meme-is-this-anyway";
 // import { theTrialsAndTribulationsOfOnlineMultiplayer } from "./posts/the-trials-and-tribulations-of-online-multiplayer";

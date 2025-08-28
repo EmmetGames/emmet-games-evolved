@@ -2,9 +2,9 @@ import { BlogPost } from "../blogPosts";
 import logo from "@/assets/meme-masters-a-retrospect/logo.webp";
 
 
-export const memeMastersARetrospect: BlogPost = {
-  id: "meme-masters-a-retrospect",
-  title: "Meme Masters: A Retrospect",
+export const theMemeMaster: BlogPost = {
+  id: "the-meme-master",
+  title: "The Meme Master",
   excerpt: "So, wow. Despite many unexpected hurdles, I am thrilled to announce the the first version of Meme Masters is out! That's right! You, the...",
   content: `So, wow.
 Despite many unexpected hurdles, I am thrilled to announce the the first version of _Meme Masters_ is out!
