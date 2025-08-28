@@ -1,9 +1,10 @@
+import logo from "@/assets/blogIcon.jpg";
 import { BlogPost } from "../blogPosts";
 
 export const pieceOfCake: BlogPost = {
   id: "piece-of-cake",
   title: "Piece Of Cake",
-  excerpt: "A short gameplay video showcase.",
+  excerpt: "",
   content: `
 <iframe
   src="https://www.youtube.com/embed/NUWwrl1UBtQ"
@@ -13,6 +14,6 @@ export const pieceOfCake: BlogPost = {
   loading="lazy"
 ></iframe>`,
   date: "Oct 12, 2020",
-  readTime: "1 min read",
-  image: null
+  readTime: "0 min read",
+  image: logo
 };
