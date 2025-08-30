@@ -24,7 +24,7 @@ import { memeMasterARetrospect } from "./posts/meme-master-a-retrospect";
 import { theMemeMaster } from "./posts/the-meme-master";
 import { whosMemeIsThisAnyway } from "./posts/whos-meme-is-this-anyway";
 import { theTrialsAndTribulationsOfOnlineMultiplayer } from "./posts/the-trials-and-tribulations-of-online-multiplayer";
-// import { isThatGoingToBeOnTheTest } from "./posts/is-that-going-to-be-on-the-test";
+import { isThatGoingToBeOnTheTest } from "./posts/is-that-going-to-be-on-the-test";
 // import { inSpaceNoOneCanHearYourSfx } from "./posts/in-space-no-one-can-hear-your-sfx";
 // import { makingItPop } from "./posts/making-it-pop";
 // import { backInTheGame } from "./posts/back-in-the-game";
@@ -78,7 +78,7 @@ export const blogPosts: BlogPost[] = [
   theMemeMaster,
   whosMemeIsThisAnyway,
   theTrialsAndTribulationsOfOnlineMultiplayer,
-  // isThatGoingToBeOnTheTest,
+  isThatGoingToBeOnTheTest,
   // inSpaceNoOneCanHearYourSfx,
   // makingItPop,
   // backInTheGame,
