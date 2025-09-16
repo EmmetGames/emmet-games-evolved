@@ -23,26 +23,38 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href.startsWith('#') ? `/${item.href}` : item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
-                onClick={(e) => {
-                  if (item.href.startsWith('#')) {
-                    e.preventDefault();
-                    if (window.location.pathname !== '/') {
-                      window.location.href = `/${item.href}`;
-                    } else {
-                      document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+            {navItems.map((item) => {
+              const isAnchor = item.href.startsWith("#");
+              const fullHref = isAnchor
+                ? `${import.meta.env.BASE_URL}${item.href}` // prepend base for anchors
+                : item.href;
+
+              return (
+                <a
+                  key={item.name}
+                  href={fullHref}
+                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                  onClick={(e) => {
+                    if (isAnchor) {
+                      e.preventDefault();
+                      // Smooth scroll if already on homepage
+                      if (window.location.pathname === import.meta.env.BASE_URL) {
+                        document
+                          .querySelector(item.href)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      } else {
+                        // Navigate to homepage + anchor
+                        window.location.href = fullHref;
+                      }
                     }
-                  }
-                }}
-              >
-                {item.name}
-              </a>
-            ))}
+                  }}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
           </div>
+
 
           {/* Mobile Menu Button */}
           <Button
