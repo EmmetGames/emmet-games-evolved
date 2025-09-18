@@ -4,8 +4,8 @@ import gameplayFootage from "@/assets/blog-fill-gameplay.gif";
 export const turningOverANewLeaf: BlogPost = {
   id: "turning-over-a-new-leaf",
   title: "Turning over a new leaf",
-  excerpt: "ABCDFGBack from a break and now officially working part-time as a game dev! Plus, a sneak peek at my new game, FILL.",
-  content: `ABCDFGHi there!
+  excerpt: "Back from a break and now officially working part-time as a game dev! Plus, a sneak peek at my new game, FILL.",
+  content: `Hi there!
 
 I'm finally back from my break and I'm super pumped to get back into the action!
 I won't fill you in on all the stuff that's been happening in my life, but there is one super cool thing I'd love to share - I'm officially working part-time as a game dev!
