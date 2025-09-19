@@ -5,8 +5,12 @@ import GamesSection from "@/components/GamesSection";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { useScrollToHashOnLoad } from "@/hooks/useScrollToHashOnLoad"; // adjust path
 
 const Index = () => {
+  // auto-scroll to hash if needed
+  useScrollToHashOnLoad({ retry: 3 });
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
