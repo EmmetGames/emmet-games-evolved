@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts, BlogPost } from "@/data/blogPosts";
+import ScrollToTopOnMount from "@/components/ScrollToTopOnMount";
 
 const BlogCard = ({ post }: { post: BlogPost }) => (
   <Link to={`/blog/${post.id}`}>
@@ -47,6 +48,7 @@ const AllBlogs = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <ScrollToTopOnMount />
 
       <main className="pt-20">
         {/* Header Section */}

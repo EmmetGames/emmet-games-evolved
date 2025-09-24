@@ -15,6 +15,7 @@ import dustbusterIcon from "@/assets/dustbuster-icon.png";
 import dyingForTreasureIcon from "@/assets/dying-for-treasure-icon.png";
 import interstellarGuardianIcon from "@/assets/interstellar-guardian-icon.png";
 import plungingIcon from "@/assets/plunging-icon.png";
+import ScrollToTopOnMount from "@/components/ScrollToTopOnMount";
 
 const AllGames = () => {
   useEffect(() => {
@@ -152,6 +153,7 @@ const AllGames = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ScrollToTopOnMount />
       <Navigation />
       
       <main className="pt-20">

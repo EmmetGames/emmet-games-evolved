@@ -8,6 +8,7 @@ import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkBreaks from "remark-breaks";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
+import ScrollToTopOnMount from "@/components/ScrollToTopOnMount";
 
 const sanitizeSchema = {
   ...defaultSchema,
@@ -28,6 +29,7 @@ export default function BlogPage() {
 
   return (
     <div className="max-w-4xl mx-auto py-20 px-6">
+      <ScrollToTopOnMount />
       <Link to="/blog" className="inline-flex items-center text-primary hover:text-primary/80 mb-6">
         <ArrowLeft size={20} className="mr-2" />
         Back to All Posts
