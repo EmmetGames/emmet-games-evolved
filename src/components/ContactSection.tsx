@@ -2,6 +2,8 @@ import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Textarea } from "./ui/textarea";
+import { Input } from "./ui/input";
 
 const ContactSection = () => {
   const captchaRef = useRef(null);
@@ -35,19 +37,73 @@ const ContactSection = () => {
           <Card className="p-8 bg-gradient-card border-border/50">
             <h3 className="text-2xl font-bold mb-6 text-foreground">Send me a message</h3>
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
-              {/* Your inputs stay the same */}
+<form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="space-y-6"
+>
+  {/* Web3Forms required fields */}
+  <input type="hidden" name="access_key" value="8c152f9e-1810-43f7-ad85-c31922aa33d4" />
+  <input type="hidden" name="from_name" value="Website Contact Form" />
 
-              <HCaptcha
-                sitekey="YOUR_PUBLIC_SITE_KEY"
-                onVerify={(token) => setCaptchaToken(token)}
-                ref={captchaRef}
-              />
+  {/* Name */}
+  <div>
+    <label className="text-sm font-medium text-foreground mb-2 block">Name</label>
+    <Input
+      name="name"
+      placeholder="Your name"
+      required
+      className="bg-background border-border focus:border-primary text-foreground placeholder:text-muted-foreground"
+    />
+  </div>
 
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow-primary">
-                Send Message
-              </Button>
-            </form>
+  {/* Email */}
+  <div>
+    <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
+    <Input
+      type="email"
+      name="email"
+      placeholder="your.email@example.com"
+      required
+      className="bg-background border-border focus:border-primary text-foreground placeholder:text-muted-foreground"
+    />
+  </div>
+
+  {/* Subject */}
+  <div>
+    <label className="text-sm font-medium text-foreground mb-2 block">Subject</label>
+    <Input
+      name="subject"
+      placeholder="What's this about?"
+      required
+      className="bg-background border-border focus:border-primary text-foreground placeholder:text-muted-foreground"
+    />
+  </div>
+
+  {/* Message */}
+  <div>
+    <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
+    <Textarea
+      name="message"
+      rows={6}
+      required
+      placeholder="Tell me about your project or idea..."
+      className="bg-background border-border focus:border-primary text-foreground placeholder:text-muted-foreground resize-none"
+    />
+  </div>
+
+  {/* hCaptcha (if you enabled it in Web3Forms settings) */}
+  <div className="h-captcha" data-captcha="true"></div>
+
+  <Button
+    type="submit"
+    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow-primary"
+  >
+    Send Message
+  </Button>
+</form>
+
+
           </Card>
         </div>
       </div>
