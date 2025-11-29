@@ -8,6 +8,7 @@ import AllGames from "./pages/AllGames";
 import AllBlogs from "./pages/AllBlogs";
 import NotFound from "./pages/NotFound";
 import BlogPage from "./pages/BlogPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/games" element={<AllGames />} />
