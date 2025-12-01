@@ -26,7 +26,7 @@ import { whosMemeIsThisAnyway } from "./posts/whos-meme-is-this-anyway";
 import { theTrialsAndTribulationsOfOnlineMultiplayer } from "./posts/the-trials-and-tribulations-of-online-multiplayer";
 import { isThatGoingToBeOnTheTest } from "./posts/is-that-going-to-be-on-the-test";
 import { inSpaceNoOneCanHearYourSfx } from "./posts/in-space-no-one-can-hear-your-sfx";
-// import { makingItPop } from "./posts/making-it-pop";
+import { makingItPop } from "./posts/making-it-pop";
 // import { backInTheGame } from "./posts/back-in-the-game";
 // import { networkingShenanigans } from "./posts/networking-shenanigans";
 // import { thatMomentWhenYouDevAGame } from "./posts/that-moment-when-you-dev-a-game";
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
   theTrialsAndTribulationsOfOnlineMultiplayer,
   isThatGoingToBeOnTheTest,
   inSpaceNoOneCanHearYourSfx,
-  // makingItPop,
+  makingItPop,
   // backInTheGame,
   // networkingShenanigans,
   // thatMomentWhenYouDevAGame,
