@@ -28,7 +28,7 @@ import { isThatGoingToBeOnTheTest } from "./posts/is-that-going-to-be-on-the-tes
 import { inSpaceNoOneCanHearYourSfx } from "./posts/in-space-no-one-can-hear-your-sfx";
 import { makingItPop } from "./posts/making-it-pop";
 import { backInTheGame } from "./posts/back-in-the-game";
-// import { networkingShenanigans } from "./posts/networking-shenanigans";
+import { networkingShenanigans } from "./posts/networking-shenanigans";
 // import { thatMomentWhenYouDevAGame } from "./posts/that-moment-when-you-dev-a-game";
 // import { springCleaning } from "./posts/spring-cleaning";
 // import { youreNotSupposedToBeHereIsPublished } from "./posts/youre-not-supposed-to-be-here-is-published";
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
   inSpaceNoOneCanHearYourSfx,
   makingItPop,
   backInTheGame,
-  // networkingShenanigans,
+  networkingShenanigans,
   // thatMomentWhenYouDevAGame,
   // springCleaning,
   // youreNotSupposedToBeHereIsPublished,
