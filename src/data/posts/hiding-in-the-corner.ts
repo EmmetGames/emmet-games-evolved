@@ -1,5 +1,5 @@
 import { BlogPost } from "../blogPosts";
-import image from "@/assets/haven-t-i-been-here-before/hiding.png"
+import image from "@/assets/hiding-in-the-corner.png"
 
 export const hidingInTheCorner: BlogPost = {
   id: "hiding-in-the-corner",
