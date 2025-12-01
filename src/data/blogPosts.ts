@@ -34,7 +34,7 @@ import { springCleaning } from "./posts/spring-cleaning";
 import { youreNotSupposedToBeHereIsPublished } from "./posts/you-re-not-supposed-to-be-here-is-published";
 import { theVeryTop } from "./posts/the-very-top";
 import { openBetaIsFinallyHere } from "./posts/open-beta-is-finally-here";
-// import { waxOnWaxOff } from "./posts/wax-on-wax-off";
+import { waxOnWaxOff } from "./posts/wax-on-wax-off";
 // import { strikeAPose } from "./posts/strike-a-pose";
 // import { haventIBeenHereBefore } from "./posts/havent-i-been-here-before";
 // import { hidingInTheCorner } from "./posts/hiding-in-the-corner";
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
   youreNotSupposedToBeHereIsPublished,
   theVeryTop,
   openBetaIsFinallyHere,
-  // waxOnWaxOff,
+  waxOnWaxOff,
   // strikeAPose,
   // haventIBeenHereBefore,
   // hidingInTheCorner,
