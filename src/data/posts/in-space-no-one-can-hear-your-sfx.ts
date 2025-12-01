@@ -32,7 +32,7 @@ That's it for my progress report. I'll do some final internal play-testing and b
 Unfortunately, due to the quarantine situation currently prevalent in the world, it will be hard for people to actually play my game, since it requires a minimum of three active players in the same local network to play. It's a huge bummer, but considering all the terrible things some people need to endure right now, this is definitely not such a big deal.
 
 That's basically it. See you in the public beta!`,
-  date: "April 10, 2020",
+  date: "Apr 10, 2020",
   readTime: "2 min read",
   image: waiting
 };
