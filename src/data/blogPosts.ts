@@ -39,7 +39,7 @@ import { strikeAPose } from "./posts/strike-a-pose";
 import { haventIBeenHereBefore } from "./posts/haven-t-i-been-here-before";
 import { hidingInTheCorner } from "./posts/hiding-in-the-corner";
 import { youreNotSupposedToBeHereBabySteps } from "./posts/you-re-not-supposed-to-be-here-baby-steps";
-// import { officiallyWorkingOnANewGame } from "./posts/officially-working-on-a-new-game";
+import { officiallyWorkingOnANewGame } from "./posts/officially-working-on-a-new-game";
 // import { vrIsJustAroundTheCorner } from "./posts/vr-is-just-around-the-corner";
 // import { backToTheDrawingBoard } from "./posts/back-to-the-drawing-board";
 
@@ -93,7 +93,7 @@ export const blogPosts: BlogPost[] = [
   haventIBeenHereBefore,
   hidingInTheCorner,
   youreNotSupposedToBeHereBabySteps,
-  // officiallyWorkingOnANewGame,
+  officiallyWorkingOnANewGame,
   // vrIsJustAroundTheCorner,
   // backToTheDrawingBoard
 ];
