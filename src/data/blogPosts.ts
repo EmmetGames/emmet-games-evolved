@@ -32,7 +32,7 @@ import { networkingShenanigans } from "./posts/networking-shenanigans";
 import { thatMomentWhenYouDevAGame } from "./posts/that-moment-when-you-dev-a-game";
 import { springCleaning } from "./posts/spring-cleaning";
 import { youreNotSupposedToBeHereIsPublished } from "./posts/you-re-not-supposed-to-be-here-is-published";
-// import { theVeryTop } from "./posts/the-very-top";
+import { theVeryTop } from "./posts/the-very-top";
 // import { openBetaIsFinallyHere } from "./posts/open-beta-is-finally-here";
 // import { waxOnWaxOff } from "./posts/wax-on-wax-off";
 // import { strikeAPose } from "./posts/strike-a-pose";
@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
   thatMomentWhenYouDevAGame,
   springCleaning,
   youreNotSupposedToBeHereIsPublished,
-  // theVeryTop,
+  theVeryTop,
   // openBetaIsFinallyHere,
   // waxOnWaxOff,
   // strikeAPose,
