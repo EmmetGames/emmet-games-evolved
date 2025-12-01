@@ -35,7 +35,7 @@ import { youreNotSupposedToBeHereIsPublished } from "./posts/you-re-not-supposed
 import { theVeryTop } from "./posts/the-very-top";
 import { openBetaIsFinallyHere } from "./posts/open-beta-is-finally-here";
 import { waxOnWaxOff } from "./posts/wax-on-wax-off";
-// import { strikeAPose } from "./posts/strike-a-pose";
+import { strikeAPose } from "./posts/strike-a-pose";
 // import { haventIBeenHereBefore } from "./posts/havent-i-been-here-before";
 // import { hidingInTheCorner } from "./posts/hiding-in-the-corner";
 // import { youreNotSupposedToBeHereBabySteps } from "./posts/youre-not-supposed-to-be-here-baby-steps";
@@ -89,7 +89,7 @@ export const blogPosts: BlogPost[] = [
   theVeryTop,
   openBetaIsFinallyHere,
   waxOnWaxOff,
-  // strikeAPose,
+  strikeAPose,
   // haventIBeenHereBefore,
   // hidingInTheCorner,
   // youreNotSupposedToBeHereBabySteps,
