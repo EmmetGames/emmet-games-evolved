@@ -29,7 +29,7 @@ import { inSpaceNoOneCanHearYourSfx } from "./posts/in-space-no-one-can-hear-you
 import { makingItPop } from "./posts/making-it-pop";
 import { backInTheGame } from "./posts/back-in-the-game";
 import { networkingShenanigans } from "./posts/networking-shenanigans";
-// import { thatMomentWhenYouDevAGame } from "./posts/that-moment-when-you-dev-a-game";
+import { thatMomentWhenYouDevAGame } from "./posts/that-moment-when-you-dev-a-game";
 // import { springCleaning } from "./posts/spring-cleaning";
 // import { youreNotSupposedToBeHereIsPublished } from "./posts/youre-not-supposed-to-be-here-is-published";
 // import { theVeryTop } from "./posts/the-very-top";
@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
   makingItPop,
   backInTheGame,
   networkingShenanigans,
-  // thatMomentWhenYouDevAGame,
+  thatMomentWhenYouDevAGame,
   // springCleaning,
   // youreNotSupposedToBeHereIsPublished,
   // theVeryTop,
