@@ -40,8 +40,8 @@ import { haventIBeenHereBefore } from "./posts/haven-t-i-been-here-before";
 import { hidingInTheCorner } from "./posts/hiding-in-the-corner";
 import { youreNotSupposedToBeHereBabySteps } from "./posts/you-re-not-supposed-to-be-here-baby-steps";
 import { officiallyWorkingOnANewGame } from "./posts/officially-working-on-a-new-game";
-// import { vrIsJustAroundTheCorner } from "./posts/vr-is-just-around-the-corner";
-// import { backToTheDrawingBoard } from "./posts/back-to-the-drawing-board";
+import { vrIsJustAroundTheCorner } from "./posts/vr-is-just-around-the-corner";
+import { backToTheDrawingBoard } from "./posts/back-to-the-drawing-board";
 
 export interface BlogPost {
   id: string;
@@ -94,8 +94,8 @@ export const blogPosts: BlogPost[] = [
   hidingInTheCorner,
   youreNotSupposedToBeHereBabySteps,
   officiallyWorkingOnANewGame,
-  // vrIsJustAroundTheCorner,
-  // backToTheDrawingBoard
+  vrIsJustAroundTheCorner,
+  backToTheDrawingBoard
 ];
 
 export const getFeaturedPost = () => blogPosts.find(post => post.featured);
