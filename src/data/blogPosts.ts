@@ -33,7 +33,7 @@ import { thatMomentWhenYouDevAGame } from "./posts/that-moment-when-you-dev-a-ga
 import { springCleaning } from "./posts/spring-cleaning";
 import { youreNotSupposedToBeHereIsPublished } from "./posts/you-re-not-supposed-to-be-here-is-published";
 import { theVeryTop } from "./posts/the-very-top";
-// import { openBetaIsFinallyHere } from "./posts/open-beta-is-finally-here";
+import { openBetaIsFinallyHere } from "./posts/open-beta-is-finally-here";
 // import { waxOnWaxOff } from "./posts/wax-on-wax-off";
 // import { strikeAPose } from "./posts/strike-a-pose";
 // import { haventIBeenHereBefore } from "./posts/havent-i-been-here-before";
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
   springCleaning,
   youreNotSupposedToBeHereIsPublished,
   theVeryTop,
-  // openBetaIsFinallyHere,
+  openBetaIsFinallyHere,
   // waxOnWaxOff,
   // strikeAPose,
   // haventIBeenHereBefore,
