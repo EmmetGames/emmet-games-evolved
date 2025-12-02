@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "@/assets/emmet-profile.jpg"
 
 const AboutSection = () => {
   const skills = [
@@ -26,7 +27,7 @@ const AboutSection = () => {
             <Card className="p-8 bg-gradient-card border-border/50 hover:shadow-glow-accent transition-all duration-500">
               <div className="w-full aspect-square bg-muted rounded-lg mb-6 relative overflow-hidden">
                 <img 
-                  src="/src/assets/emmet-profile.jpg" 
+                  src={Image}
                   alt="Emmet Winter - Game Developer"
                   className="w-full h-full object-cover object-top"
                 />
