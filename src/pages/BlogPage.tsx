@@ -39,20 +39,22 @@ export default function BlogPage() {
         <span className="flex items-center gap-2"><Clock size={16} />{post.readTime}</span>
       </div>
 
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm, remarkBreaks]}
-        rehypePlugins={[rehypeHighlight, rehypeRaw, [rehypeSanitize, sanitizeSchema]]}
-        components={{
-          img: ({node, ...props}) => <img {...props} className="rounded-lg my-6 mx-auto" />,
-          iframe: ({node, ...props}) => (
-            <div className="my-6 aspect-video w-full overflow-hidden rounded-lg">
-              <iframe {...props} className="w-full h-full" />
-            </div>
-          ),
-        }}
-      >
-        {post.content}
-      </ReactMarkdown>
+      <article className="prose prose-invert max-w-none">
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm, remarkBreaks]}
+          rehypePlugins={[rehypeHighlight, rehypeRaw, [rehypeSanitize, sanitizeSchema]]}
+          components={{
+            img: ({node, ...props}) => <img {...props} className="rounded-lg my-6 mx-auto" />,
+            iframe: ({node, ...props}) => (
+              <div className="my-6 aspect-video w-full overflow-hidden rounded-lg">
+                <iframe {...props} className="w-full h-full" />
+              </div>
+            ),
+          }}
+        >
+          {post.content}
+        </ReactMarkdown>
+      </article>
     </div>
   );
 }
