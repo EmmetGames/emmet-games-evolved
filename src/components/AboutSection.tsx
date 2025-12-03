@@ -65,9 +65,17 @@ const AboutSection = () => {
               </div>
             </div>
 
+          <a 
+            href="/EmmetWinterResume.pdf" 
+            download 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow-primary">
               Download Resume
             </Button>
+          </a>
           </div>
         </div>
       </div>
