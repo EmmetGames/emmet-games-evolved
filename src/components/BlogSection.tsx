@@ -7,7 +7,7 @@ import { getFeaturedPost, getOtherPosts } from "@/data/blogPosts";
 
 const BlogSection = () => {
   const featuredPost = getFeaturedPost();
-  const otherPosts = getOtherPosts(4);
+  const otherPosts = getOtherPosts(3);
 
   return (
     <section id="blog" className="py-20 bg-background">
@@ -50,7 +50,7 @@ const BlogSection = () => {
                   {featuredPost?.readTime}
                 </div>
                 <Button className="w-fit bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
-                  <Link to="/blog">
+                  <Link to={`/blog/${featuredPost.id}`}>
                     Read More
                     <ArrowRight size={16} className="ml-2" />
                   </Link>
@@ -94,10 +94,14 @@ const BlogSection = () => {
                     <Clock size={12} className="ml-3 mr-1" />
                     {post.readTime}
                   </div>
-                  
-                  <Button variant="ghost" className="w-full justify-start p-0 h-auto text-primary hover:text-primary/80">
-                    Read More
-                    <ArrowRight size={14} className="ml-1" />
+                  <Button
+                    asChild
+                    variant="ghost"
+                    className="w-full justify-start p-0 h-auto text-primary hover:text-primary/80"
+                  >
+                    <Link to={`/blog/${post.id}`}>
+                      Read More <ArrowRight size={14} className="ml-1" />
+                    </Link>
                   </Button>
                 </div>
               </Card>
