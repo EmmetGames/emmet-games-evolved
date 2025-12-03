@@ -22,24 +22,28 @@ const GamesSection = () => {
 
         {/* Mobile Section */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-foreground">Mobile Games</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h3 className="text-2xl font-bold mb-8 text-foreground text-center">Mobile Games</h3>
+          <div className="flex flex-wrap justify-center gap-8">
             {games
               .filter((g) => g.type === "mobile")
               .map((game) => (
-                <GameCard key={game.title} game={game} />
+                <div className="w-full md:w-1/2 lg:w-[31%] box-border">
+                  <GameCard key={game.title} game={game} />
+                </div>
               ))}
           </div>
         </div>
 
         {/* PC Section */}
         <div>
-          <h3 className="text-2xl font-bold mb-8 text-foreground">PC Games</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h3 className="text-2xl font-bold mb-8 text-foreground text-center">PC Games</h3>
+          <div className="flex flex-wrap justify-center gap-8">
             {games
               .filter((g) => g.type === "pc")
               .map((game) => (
-                <GameCard key={game.title} game={game} />
+                <div className="w-full md:w-1/2 lg:w-[31%] box-border">
+                  <GameCard key={game.title} game={game} />
+                </div>
               ))}
           </div>
         </div>

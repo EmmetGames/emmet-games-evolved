@@ -63,9 +63,11 @@ const AllGames = () => {
                 />
               </a>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-8">
               {mobileGames.map((game) => (
-                <GameCard key={game.title} game={game} />
+                <div className="w-full md:w-1/2 lg:w-[31%] box-border">
+                  <GameCard key={game.title} game={game} />
+                </div>
               ))}
             </div>
           </div>
@@ -96,9 +98,11 @@ const AllGames = () => {
               </a>
             </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-8">
                 {pcGames.map((game) => (
-                  <GameCard key={game.title} game={game} />
+                  <div className="w-full md:w-1/2 lg:w-[31%] box-border">
+                    <GameCard key={game.title} game={game} />
+                  </div>
                 ))}
               </div>
 
@@ -108,9 +112,11 @@ const AllGames = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-8">
               {jamGames.map((game) => (
-                <GameCard key={game.title} game={game} />
+                <div className="w-full md:w-1/2 lg:w-[31%] box-border">
+                  <GameCard key={game.title} game={game} />
+                </div>
               ))}
             </div>
           </div>
