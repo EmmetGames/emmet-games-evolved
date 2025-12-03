@@ -3,76 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import fillIcon from "@/assets/fill-game-icon.png";
-import memeMastersIcon from "@/assets/meme-masters-icon.png";
-import youreNotSupposedIcon from "@/assets/youre-not-supposed-icon.png";
-import dustbusterIcon from "@/assets/dustbuster-icon.png";
-import interstellarGuardianIcon from "@/assets/interstellar-guardian-icon.png";
-import plungingIcon from "@/assets/plunging-icon.png";
+import { mobileGames, pcGames } from "@/data/games";
+
+const games = [...mobileGames, ...pcGames];
 
 const GamesSection = () => {
-  const games = [
-    {
-      title: "F I L L",
-      year: "2020",
-      category: "Hypercasual",
-      description: "Fill up the screen with fun shapes!",
-      tags: ["Unity", "Mobile", "Puzzle", "Hypercasual"],
-      status: "Released",
-      icon: fillIcon,
-      type: "mobile"
-    },
-    {
-      title: "Meme Masters", 
-      year: "2020",
-      category: "Social - Online Multiplayer",
-      description: "Compete with friends to make the funniest memes!",
-      tags: ["Mobile", "Unity", "Multiplayer", "Funny"],
-      status: "Released",
-      icon: memeMastersIcon,
-      type: "mobile"
-    },
-    {
-      title: "You're Not Supposed To Be Here",
-      year: "2019",
-      category: "Arcade - Stealth", 
-      description: "Sneak through, collect intel, and DON'T. GET. CAUGHT.",
-      tags: ["Mobile", "Stealth", "Arcade"],
-      status: "Released",
-      icon: youreNotSupposedIcon,
-      type: "mobile"
-    },
-    {
-      title: "Dying For Treasure",
-      year: "2020",
-      category: "Platformer - Puzzle",
-      description: "Made in collaboration with Amit Klein and Inbar Zoref for the 2020 VimJam. Hunt for treasure and make sure not to let the treasure hunt you!",
-      tags: ["PC", "Platformer", "Puzzle", "Game Jam"],
-      status: "Released",
-      icon: dustbusterIcon,
-      type: "pc"
-    },
-    {
-      title: "Interstellar Guardian",
-      year: "2018",
-      category: "Arcade - Top-Down Shooter",
-      description: "Protect the Earth from the evil Surge and try to stay alive!",
-      tags: ["PC", "Arcade", "Shooter"],
-      status: "Released",
-      icon: interstellarGuardianIcon,
-      type: "pc"
-    },
-    {
-      title: "Plunging",
-      year: "2017",
-      category: "Story-Driven",
-      description: "There's only one way down.",
-      tags: ["PC", "Story", "Adventure"],
-      status: "Released",
-      icon: plungingIcon,
-      type: "pc"
-    }
-  ];
 
   return (
     <section id="games" className="py-20 bg-secondary/30">
