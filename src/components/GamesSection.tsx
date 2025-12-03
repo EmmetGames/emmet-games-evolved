@@ -1,17 +1,16 @@
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import { mobileGames, pcGames } from "@/data/games";
+import GameCard from "@/components/GameCard";
 
 const games = [...mobileGames, ...pcGames];
 
-const GamesSection = () => {
 
+const GamesSection = () => {
   return (
     <section id="games" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Games <span className="text-primary">Portfolio</span>
@@ -21,130 +20,38 @@ const GamesSection = () => {
           </p>
         </div>
 
-        {/* Mobile Games Section */}
+        {/* Mobile Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-foreground">Mobile Games</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {games.filter(game => game.type === "mobile").map((game) => (
-              <Card 
-                key={game.title}
-                className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
-              >
-                <div className="h-48 bg-muted relative overflow-hidden flex items-center justify-center">
-                  <img 
-                    src={game.icon} 
-                    alt={`${game.title} game icon`}
-                    className="w-24 h-24 object-contain"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge variant="secondary" className="bg-primary text-primary-foreground">
-                      {game.year}
-                    </Badge>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                    <Button size="icon" className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-glow-primary">
-                      <Play size={20} />
-                    </Button>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                        {game.title}
-                      </h3>
-                      <p className="text-sm text-accent">{game.category}</p>
-                    </div>
-                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                      <ExternalLink size={16} />
-                    </Button>
-                  </div>
-                  
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                    {game.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag) => (
-                      <Badge 
-                        key={tag} 
-                        variant="outline" 
-                        className="text-xs border-muted hover:border-primary hover:text-primary transition-colors"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </Card>
-            ))}
+            {games
+              .filter((g) => g.type === "mobile")
+              .map((game) => (
+                <GameCard key={game.title} game={game} />
+              ))}
           </div>
         </div>
 
-        {/* PC Games Section */}
+        {/* PC Section */}
         <div>
           <h3 className="text-2xl font-bold mb-8 text-foreground">PC Games</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {games.filter(game => game.type === "pc").map((game) => (
-              <Card 
-                key={game.title}
-                className="group bg-gradient-card border-border/50 overflow-hidden hover:shadow-glow-accent transition-all duration-500 hover:-translate-y-2"
-              >
-                <div className="h-48 bg-muted relative overflow-hidden flex items-center justify-center">
-                  <img 
-                    src={game.icon} 
-                    alt={`${game.title} game icon`}
-                    className="w-24 h-24 object-contain"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge variant="secondary" className="bg-primary text-primary-foreground">
-                      {game.year}
-                    </Badge>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                    <Button size="icon" className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-glow-primary">
-                      <Play size={20} />
-                    </Button>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-3">
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                        {game.title}
-                      </h3>
-                      <p className="text-sm text-accent">{game.category}</p>
-                    </div>
-                    <Button variant="ghost" size="icon" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                      <ExternalLink size={16} />
-                    </Button>
-                  </div>
-                  
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                    {game.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag) => (
-                      <Badge 
-                        key={tag} 
-                        variant="outline" 
-                        className="text-xs border-muted hover:border-primary hover:text-primary transition-colors"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </Card>
-            ))}
+            {games
+              .filter((g) => g.type === "pc")
+              .map((game) => (
+                <GameCard key={game.title} game={game} />
+              ))}
           </div>
         </div>
 
+        {/* View All Button */}
         <div className="text-center mt-12">
-          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+          >
             <Link to="/games">View All Projects</Link>
           </Button>
         </div>
