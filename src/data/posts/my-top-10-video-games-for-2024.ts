@@ -242,5 +242,5 @@ This game is an amazing accomplishment by Billy Basso and an absolute victory fo
   date: "Dec 28, 2024",
   readTime: "11 min read",
   image: blogTop10Image,
-  featured: true
+  featured: false
 };

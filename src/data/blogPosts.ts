@@ -42,6 +42,7 @@ import { youreNotSupposedToBeHereBabySteps } from "./posts/you-re-not-supposed-t
 import { officiallyWorkingOnANewGame } from "./posts/officially-working-on-a-new-game";
 import { vrIsJustAroundTheCorner } from "./posts/vr-is-just-around-the-corner";
 import { backToTheDrawingBoard } from "./posts/back-to-the-drawing-board";
+import { laOlaARetrospective } from "./posts/la-ola-a-retrospective";
 
 export interface BlogPost {
   id: string;
@@ -55,6 +56,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  laOlaARetrospective,
   myTop10VideoGamesFor2024,
   cabinetComplete,
   toPlanAMockingbird,
