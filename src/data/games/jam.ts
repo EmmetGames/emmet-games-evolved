@@ -2,6 +2,7 @@ import dustbusterIcon from "@/assets/dustbuster-icon.png";
 import dyingForTreasureIcon from "@/assets/dying-for-treasure-icon.png";
 import laOlaIcon from "@/assets/la-ola-icon.png";
 
+
 export const jamGames = [
   {
     title: "La Ola",
