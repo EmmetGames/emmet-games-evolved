@@ -1,7 +1,21 @@
 import dustbusterIcon from "@/assets/dustbuster-icon.png";
 import dyingForTreasureIcon from "@/assets/dying-for-treasure-icon.png";
+import laOlaIcon from "@/assets/la-ola-icon.png";
 
 export const jamGames = [
+  {
+    title: "La Ola",
+    year: "2025",
+    genre: "Typing - Endless Runner",
+    category: "Typing - Endless Runner",
+    description: "Press keys in time to keep the Mexican Wave going!",
+    subtext: "Made in collaboration with Jay Arbuthnot, Evie Winter, Conor Wilson and Sankha Peiris for Game Off 2025.",
+	tags: ["PC", "Typing", "Endless Runner"],
+    icon: laOlaIcon,
+    type: "pc",
+    playLink: "https://quietlantern.itch.io/la-ola",
+    platform: "PC"
+  },
   {
     title: "Dustbuster",
     year: "2022",
