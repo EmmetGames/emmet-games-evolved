@@ -26,9 +26,6 @@ const ContactSection = () => {
       return;
     }
 
-    // Add CAPTCHA token explicitly
-    formData.append("captcha", captchaToken);
-
     try {
       setLoading(true);
 
