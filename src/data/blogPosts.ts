@@ -44,6 +44,7 @@ import { vrIsJustAroundTheCorner } from "./posts/vr-is-just-around-the-corner";
 import { backToTheDrawingBoard } from "./posts/back-to-the-drawing-board";
 import { laOlaARetrospective } from "./posts/la-ola-a-retrospective";
 import { lessonsFromMetroidPrime } from "./posts/lessons-from-metroid-prime";
+import { myTop10VideoGamesFor2025 } from "./posts/my-top-10-video-games-for-2025";
 
 export interface BlogPost {
   id: string;
@@ -57,6 +58,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  myTop10VideoGamesFor2025,
   lessonsFromMetroidPrime,
   laOlaARetrospective,
   myTop10VideoGamesFor2024,
