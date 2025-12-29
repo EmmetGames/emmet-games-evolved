@@ -1,3 +1,4 @@
+export * from "./beachbum";
 export * from "./mobile";
 export * from "./pc";
 export * from "./jam";
