@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import GamesSectionAllGamesPage from "@/components/GameSectionAllGamesPage";
-import beachBumIcon from "@/assets/BeachBumIcon.webp"
+import beachBumIcon from "@/assets/beachBumLogo.png"
 import {
   beachBumGames,
   mobileGames,
