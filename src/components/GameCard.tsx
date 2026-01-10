@@ -26,7 +26,7 @@ const GameCard = ({ game }: GameCardProps) => {
         <img
           src={game.icon}
           alt={`${game.title} game icon`}
-          className="w-24 h-24 object-contain"
+          className="w-24 h-24 object-contain rounded-lg my-6 mx-auto"
         />
 
         <div className="absolute top-4 left-4">
