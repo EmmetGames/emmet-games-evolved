@@ -1,9 +1,23 @@
 import dustbusterIcon from "@/assets/dustbuster-icon.png";
 import dyingForTreasureIcon from "@/assets/dying-for-treasure-icon.png";
 import laOlaIcon from "@/assets/la-ola-icon.png";
+import myLittleLuchadorIcon from "@/assets/myLittleLuchador.png";
 
 
 export const jamGames = [
+  {
+    title: "My Little Luchador",
+    year: "2026",
+    genre: "Brawler - PVP",
+    category: "Brawler - PVP",
+    description: "In this comedic player versus player wrestling game, pick up masks to get the edge on your rival!",
+    subtext: "Made in collaboration with Suspicious Jam (Logan Urlichs, Simon and Andrew Chiu) and lots of talented musicians for Global Game Jam 2026.",
+	  tags: ["PC", "Brawler", "PVP", "Action"],
+    icon: myLittleLuchadorIcon,
+    type: "pc",
+    playLink: "https://jamtonyx.itch.io/my-little-luchadors",
+    platform: "PC"
+  },
   {
     title: "La Ola",
     year: "2025",
