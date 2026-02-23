@@ -45,6 +45,7 @@ import { backToTheDrawingBoard } from "./posts/back-to-the-drawing-board";
 import { laOlaARetrospective } from "./posts/la-ola-a-retrospective";
 import { lessonsFromMetroidPrime } from "./posts/lessons-from-metroid-prime";
 import { myTop10VideoGamesFor2025 } from "./posts/my-top-10-video-games-for-2025";
+import { theContradictionsOfPersona5 } from "./posts/the-contradictions-of-persona-5";
 
 export interface BlogPost {
   id: string;
@@ -58,6 +59,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  theContradictionsOfPersona5,
   myTop10VideoGamesFor2025,
   lessonsFromMetroidPrime,
   laOlaARetrospective,
