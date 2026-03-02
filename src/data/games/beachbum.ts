@@ -9,45 +9,6 @@ import hexaCoinIcon from "@/assets/hexaCoinIcon.png"
 
 export const beachBumGames = [
   {
-    title: "Spades Royale - Card Game",
-    year: "2018",
-    category: "Card - Online Multiplayer - Casual - Evergreen",
-    genre: "Card - Trick-taking",
-    description: "Play Spades with millions of other players online, and enjoy lots of fun features!",
-    tags: ["Unity", "Mobile", "Multiplayer", "Social", "Spades", "Evergreen"],
-    status: "Released",
-    icon: spadesRoyaleIcon,
-    type: "beachbum",
-    playLink: "https://play.google.com/store/apps/details?id=com.bbumgames.spadesroyale",
-    platform: "Android, iOS"
-  },
-  {
-    title: "Gin Rummy Stars",
-    year: "2020",
-    category: "Card - Online Multiplayer - Casual - Evergreen",
-    genre: "Card - Matching Rummy",
-    description: "Play the classic Gin Rummy game with heaps of great features with people around the world!",
-    tags: ["Unity", "Mobile", "Multiplayer", "Social", "Rummy", "Evergreen", "1v1"],
-    status: "Released",
-    icon: rummyStarsIcon,
-    type: "beachbum",
-    playLink: "https://play.google.com/store/apps/details?id=com.bbumgames.rummystars",
-    platform: "Android, iOS"
-  },
-  {
-    title: "Backgammon - Lord of the Board",
-    year: "2016",
-    category: "Board - Online Multiplayer - Casual - Evergreen",
-    genre: "Board - Online Multiplayer - Casual - Evergreen",
-    description: "Play live backgammon online with friends and players worldwide. Become a backgammon champion!",
-    tags: ["Unity", "Mobile", "Multiplayer", "Social", "Backgammon", "Evergreen"],
-    status: "Released",
-    icon: backgammonIcon,
-    type: "beachbum",
-    playLink: "https://play.google.com/store/apps/details?id=air.com.beachbumgammon",
-    platform: "Android, iOS"
-  },
-  {
     title: "OPA! Family Card Party Game",
     year: "2024",
     category: "Card - Online Multiplayer - Casual - Evergreen",
@@ -71,6 +32,45 @@ export const beachBumGames = [
     icon: hexaCoinIcon,
     type: "beachbum",
     playLink: "",
+    platform: "Android, iOS"
+  },
+  {
+    title: "Backgammon - Lord of the Board",
+    year: "2016",
+    category: "Board - Online Multiplayer - Casual - Evergreen",
+    genre: "Board - Online Multiplayer - Casual - Evergreen",
+    description: "Play live backgammon online with friends and players worldwide. Become a backgammon champion!",
+    tags: ["Unity", "Mobile", "Multiplayer", "Social", "Backgammon", "Evergreen"],
+    status: "Released",
+    icon: backgammonIcon,
+    type: "beachbum",
+    playLink: "https://play.google.com/store/apps/details?id=air.com.beachbumgammon",
+    platform: "Android, iOS"
+  },
+  {
+    title: "Spades Royale - Card Game",
+    year: "2018",
+    category: "Card - Online Multiplayer - Casual - Evergreen",
+    genre: "Card - Trick-taking",
+    description: "Play Spades with millions of other players online, and enjoy lots of fun features!",
+    tags: ["Unity", "Mobile", "Multiplayer", "Social", "Spades", "Evergreen"],
+    status: "Released",
+    icon: spadesRoyaleIcon,
+    type: "beachbum",
+    playLink: "https://play.google.com/store/apps/details?id=com.bbumgames.spadesroyale",
+    platform: "Android, iOS"
+  },
+  {
+    title: "Gin Rummy Stars",
+    year: "2020",
+    category: "Card - Online Multiplayer - Casual - Evergreen",
+    genre: "Card - Matching Rummy",
+    description: "Play the classic Gin Rummy game with heaps of great features with people around the world!",
+    tags: ["Unity", "Mobile", "Multiplayer", "Social", "Rummy", "Evergreen", "1v1"],
+    status: "Released",
+    icon: rummyStarsIcon,
+    type: "beachbum",
+    playLink: "https://play.google.com/store/apps/details?id=com.bbumgames.rummystars",
     platform: "Android, iOS"
   },
   {
